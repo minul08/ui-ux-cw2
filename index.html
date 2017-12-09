@@ -1,4 +1,11 @@
 <style>
+*:not(i)  {
+  font-family: 'PT Sans', sans-serif !important;
+  font-weight: 400 !important;
+}
+h1, h2, h3, h4, h5, h6{
+  text-shadow: none !important;
+}
 .portfolio-item{
   margin: 0 auto;
   width: 100%;
@@ -22,8 +29,11 @@
   height: 300px;
 }
 .portfolio-text{
-  padding: 0 !important;
-  color: white !important;
+    color: white !important;
+    padding: 5px 10px !important;
+    font-size: 20px;
+    text-shadow: none;
+    text-decoration: none;
 }
 .portfolio-selection>a:hover{
   background: transparent !important;
@@ -53,7 +63,80 @@
 
 /*Sidebar*/
 .w3-bar-item{
-  color: white;
+  color: white !important;
+  font-size: 20px !important;
+}
+
+/*Top Nav Bar*/
+.top-nav-bar{
+  z-index:1;
+  position: fixed;
+  width: 100%;
+  /*height: 50px;*/
+  background: #7b1fa2;
+}
+.top-nav-bar>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7b1fa2;
+  z-index:0;
+  height: 40px;
+}
+
+.top-nav-items {
+  float: right !important;
+}
+
+.top-nav-items>a {
+  display: block;
+  color: white !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.top-nav-items>a:hover:not(.active) {
+  background-color: trnsparent;
+  text-decoration: none;
+}
+.left-indent{
+  float: left !important;
+  font-size: 28px;
+}
+
+/*Side bar cart summary */
+.item{
+  display: inline-flex;
+  width: 100%;
+}
+.right-items{
+  width: 10%;
+  float: right;
+}
+.left-items{
+  width: 80%;
+}
+.shopping-cart-side-bar{
+  margin-top: 750px;
+  padding: 5px 16px;
+  background: #b7c2fd;
+}
+.shopping-cart-side-bar>h2{
+  font-size: 20px;
+}
+.left-items>h3{
+  color: #212121;
+  font-size: 20px;
+}
+.left-items>h4{
+  color: #555555;
+  font-size: 18px;
+}
+.right-items>h3{
+  color: #212121;
+  font-size: 20px;
 }
 
 </style>
@@ -66,15 +149,44 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/7f9d770c21.js"></script>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <body>
-
-  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; background: #98a8fc" id="mySidebar">
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; background: #98a8fc; padding-top: 50px;" id="mySidebar">
     <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
     <a href="#" class="w3-bar-item w3-button">Home</a>
     <a href="#" class="w3-bar-item w3-button">Events</a>
     <a href="#" class="w3-bar-item w3-button">Stores</a>
     <a href="#" class="w3-bar-item w3-button">Discounts</a>
     <a href="#" class="w3-bar-item w3-button">Games</a>
+
+    <div class="shopping-cart-side-bar">
+      <h2>CART SUMMARY</h2>
+      <div class="item">
+        <div class="left-items">
+          <h3>Name</h3>
+          <h4>Author</h4>
+        </div>
+        <div class="right-items">
+          <h3>$7</h3>
+        </div>
+      </div>
+      <div class="item">
+        <div class="left-items">
+          <h3> Total </h3>
+        </div>
+        <div class="right-items">
+          <h3>$7</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-nav-bar">
+    <ul>
+      <li class="top-nav-items left-indent"><a href="#home" style="padding: 0px 15px;">BookMart.LK</a></li>
+      <li  class="top-nav-items"><a href="#news"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+      <li class="top-nav-items"><a href="#contact"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+      <li class="top-nav-items"><a href="#about"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+    </ul>
   </div>
 
   <div class="row">
@@ -105,82 +217,92 @@
   </div>
   <div class="row" style="margin-left: 200px; margin-top: 20px;">
     <ul class="nav nav-pills" style="display: table; margin: 0 auto;">
-      <li class="portfolio-selection active"><img src="assests/images/events.jpg" class="img-rounded portfolio-item" ><a class="portfolio-text" href="#">Events</a></li>
+      <li class="portfolio-selection"><img src="assests/images/events.png" class="img-rounded portfolio-item" ><a class="portfolio-text" href="#">Events</a></li>
       <li class="portfolio-selection"><img src="assests/images/stores.png" class="img-rounded portfolio-item"><a class="portfolio-text" href="#">Stores</a></li>
       <li class="portfolio-selection"><img src="assests/images/games.png" class="img-rounded portfolio-item"><a  class="portfolio-text" href="#">Games</a></li>
-      <li class="portfolio-selection"><img src="assests/images/discount.jpg" class="img-rounded portfolio-item"><a class="portfolio-text" href="#">Discounts</a></li>
+      <li class="portfolio-selection"><img src="assests/images/discount.png" class="img-rounded portfolio-item"><a class="portfolio-text" href="#">Discounts</a></li>
     </ul>
   </div>
-  <div class="container" style="margin-left: 200px; margin-top: 20px;">
-    <div class="row" style="margin: 20px; background: rgba(200, 208, 251, 0.3); width: 80%;">
-    <ul class="nav nav-tabs">
-      <li class="active" style="width: 50%"><a data-toggle="tab" href="#home">Home</a></li>
-      <li style="width: 50%"><a data-toggle="tab" href="#favourites">Favourites</a></li>
-    </ul>
-    <div class="tab-content">
-      <div id="home" class="tab-pane fade in active">
-        <!-- Home Tab Content -->
-        <div class="display-item">
-          <img src="assests/images/Captain-America.jpg" class="img-rounded">
-          <div class="display-item-text" style="width: 80%">
-            <a href="#"><h2>Name</h2></a>
-            <a href="#"><h3>Author</h3></a>
+  <div class="container" style="margin-left: 200px; width: 80%; margin-top: 20px;">
+    <div class="row" style="background: rgba(200, 208, 251, 0.3); margin: 0 auto; display: table;">
+      <ul class="nav nav-tabs">
+        <li class="active" style="width: 50%"><a data-toggle="tab" href="#home">Home</a></li>
+        <li style="width: 50%"><a data-toggle="tab" href="#favourites">Favourites</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <!-- Home Tab Content -->
+          <div class="row" style="margin: 0 auto; display: table;">
+            <div class="display-item">
+              <img src="assests/images/Captain-America.jpg" class="img-rounded">
+              <div class="display-item-text" style="width: 80%">
+                <a href="#"><h2>Name</h2></a>
+                <a href="#"><h3>Author</h3></a>
+              </div>
+              <div class="display-item-text" style="width: 10%">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="#"><h3>$7</h3></a>
+              </div>
+            </div>
           </div>
-          <div class="display-item-text" style="width: 10%">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            <a href="#"><h3>$7</h3></a>
+          <div class="row" style="margin: 0 auto; display: table;">
+            <div class="display-item">
+              <img src="assests/images/Captain-America.jpg" class="img-rounded">
+              <div class="display-item-text" style="width: 80%">
+                <a href="#"><h2>Name</h2></a>
+                <a href="#"><h3>Author</h3></a>
+              </div>
+              <div class="display-item-text" style="width: 10%">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="#"><h3>$7</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin: 0 auto; display: table;">
+            <div class="display-item">
+              <img src="assests/images/Captain-America.jpg" class="img-rounded">
+              <div class="display-item-text" style="width: 80%">
+                <a href="#"><h2>Name</h2></a>
+                <a href="#"><h3>Author</h3></a>
+              </div>
+              <div class="display-item-text" style="width: 10%">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="#"><h3>$7</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin: 0 auto; display: table;">
+            <div class="display-item">
+              <img src="assests/images/Captain-America.jpg" class="img-rounded">
+              <div class="display-item-text" style="width: 80%">
+                <a href="#"><h2>Name</h2></a>
+                <a href="#"><h3>Author</h3></a>
+              </div>
+              <div class="display-item-text" style="width: 10%">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="#"><h3>$7</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin: 0 auto; display: table;">
+            <div class="display-item">
+              <img src="assests/images/Captain-America.jpg" class="img-rounded">
+              <div class="display-item-text" style="width: 80%">
+                <a href="#"><h2>Name</h2></a>
+                <a href="#"><h3>Author</h3></a>
+              </div>
+              <div class="display-item-text" style="width: 10%">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="#"><h3>$7</h3></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="display-item">
-          <img src="assests/images/Captain-America.jpg" class="img-rounded">
-          <div class="display-item-text" style="width: 80%">
-            <a href="#"><h2>Name</h2></a>
-            <a href="#"><h3>Author</h3></a>
-          </div>
-          <div class="display-item-text" style="width: 10%">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            <a href="#"><h3>$7</h3></a>
-          </div>
+        <div id="favourites" class="tab-pane fade">
+          <h3>Favourite</h3>
         </div>
-        <div class="display-item">
-          <img src="assests/images/Captain-America.jpg" class="img-rounded">
-          <div class="display-item-text" style="width: 80%">
-            <a href="#"><h2>Name</h2></a>
-            <a href="#"><h3>Author</h3></a>
-          </div>
-          <div class="display-item-text" style="width: 10%">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            <a href="#"><h3>$7</h3></a>
-          </div>
-        </div>
-        <div class="display-item">
-          <img src="assests/images/Captain-America.jpg" class="img-rounded">
-          <div class="display-item-text" style="width: 80%">
-            <a href="#"><h2>Name</h2></a>
-            <a href="#"><h3>Author</h3></a>
-          </div>
-          <div class="display-item-text" style="width: 10%">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            <a href="#"><h3>$7</h3></a>
-          </div>
-        </div>
-        <div class="display-item">
-          <img src="assests/images/Captain-America.jpg" class="img-rounded">
-          <div class="display-item-text" style="width: 80%">
-            <a href="#"><h2>Name</h2></a>
-            <a href="#"><h3>Author</h3></a>
-          </div>
-          <div class="display-item-text" style="width: 10%">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            <a href="#"><h3>$7</h3></a>
-          </div>
-        </div>
-      </div>
-      <div id="favourites" class="tab-pane fade">
-        <h3>Favourite</h3>
       </div>
     </div>
-  </div>
   </div>
 
   <script>
