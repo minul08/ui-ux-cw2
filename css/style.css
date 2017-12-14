@@ -188,31 +188,108 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .w3-sidebar {
-    height: 100%;
-    width: 200px;
-    background-color: #98a8fc!important;
-    position: fixed!important;
-    z-index: 1;
-    overflow: auto;
+  height: 100%;
+  width: 200px;
+  background-color: #98a8fc!important;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
 }
 
 .w3-sidebar a:hover {
-      text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .w3-button:hover {
-    color: #000!important;
-    background-color: #b7c2fd!important;
+  color: #000!important;
+  background-color: #b7c2fd!important;
+  text-shadow: none;
 }
 
 .closebutton{
-    background-color: #98a8fc!important;
+  background-color: #98a8fc!important;
 }
 
 .openbutton{
-    margin-top: 0px!important;
-    margin-bottom: 0px!important;
-    width: 16%!important;
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+  width: 16%!important;
+}
+
+/*account page */
+.profilepic{
+  background-image: url(../assets/images/profileimage.jpeg);
+  background-position: 50% 50%;
+  /* background-repeat: no-repeat; */
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  margin: 40px auto;
+}
+
+.profilename{
+  margin: 100px 0px;
+}
+
+.qr{
+  background-color: #b7c2fd;
+  margin: 0px 30px;
+}
+
+.qr-header{
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700!important;
+}
+
+.ui-input-text{
+  width: 90%!important;
+  margin: 0px auto!important;
+}
+
+.button {
+  background-color: #98a8fc;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 16px;
+  cursor: pointer;
+}
+
+.buttons{
+  text-align: right;
+}
+
+.ach-header{
+  background-color: #a4b2ff;
+  margin: 40px 30px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700!important;
+}
+
+.ach-element{
+  background-color: #c5c5c5;;
+  margin: 40px 30px;
+  padding: 33px;
+  font-size: 20px;
+  font-weight: 700!important;
+
+}
+
+.ach-element .leftelement{
+  display: inline-block;
+}
+
+.ach-element .rightelement{
+  text-align: right;
+  display: inline-block;
+  float: right;
 }
 
 @media only screen and (max-width: 500px) {
@@ -220,11 +297,16 @@ h1, h2, h3, h4, h5, h6{
     margin-left: 0px;
     height: auto;
   }
+
 }
 
 @media (max-width: 992px){
   .w3-sidebar.w3-collapse {
     display: none;
     z-index: 16;
-}
+  }
+
+  .profilename{
+    margin: 30px 30px;
+  }
 }

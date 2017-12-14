@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mobile UI/UX - Account</title>
+
+	<meta ccharset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- jquery mobile cdn -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- jquery -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- fonts -->
+	<script src="https://use.fontawesome.com/7f9d770c21.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+
+</head>
+
+<body>
+
+	<!-- jquery mobile tag to indicate start of page -->
+	<div data-role="page" id="account">
+
+		<div class="container-fluid">
+
+			<!-- top navigation bar -->
+			<div class="top-nav-bar">
+				<ul>
+					<li class="top-nav-items left-indent"><a href="#home" style="padding: 0px 15px;">BookMart.LK</a></li>
+					<li  class="top-nav-items"><a href="#news"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li class="top-nav-items"><a href="#contact"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+					<li class="top-nav-items"><a href="#about"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<!-- sidebar -->
+			<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="mySidebar">
+				<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="w3_close()">&times;</button>
+				<div style="margin-top: 20px;">
+					<a href="#" class="w3-bar-item w3-button">HOME</a>
+					<a href="#" class="w3-bar-item w3-button">EVENTS</a>
+					<a href="#" class="w3-bar-item w3-button">STORES</a>
+					<a href="#" class="w3-bar-item w3-button">DISCOUNTS</a>
+					<a href="#" class="w3-bar-item w3-button">GAMES</a>
+				</div>
+
+				<div class="shopping-cart-side-bar">
+					<h2>CART SUMMARY</h2>
+					<div class="item">
+						<div class="left-items">
+							<h3>Name</h3>
+							<h4>Author</h4>
+						</div>
+						<div class="right-items">
+							<h3>$7</h3>
+						</div>
+					</div>
+					<div class="item">
+						<div class="left-items">
+							<h3> Total </h3>
+						</div>
+						<div class="right-items">
+							<h3>$7</h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- main content area -->
+			<div class="w3-main" style="margin-left:200px; margin-top: 40px;">
+				<!-- mobile menu button -->
+				<div class="w3-purple">
+					<button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="w3_open()">&#9776;</button>
+					<div class="w3-container">
+					</div>
+				</div>
+				<!-- end of mobile menu button -->
+
+				<div class="row"> 
+					<div class="col-md-3">
+
+						<div class="profilepic"></div>
+						
+					</div> <!-- end of col-md-4 -->
+					<div class="col-md-9">
+
+						<div class="profilename">
+
+							<h1>MARY ALLISON</h1>
+							<h3>Points: 365</h3>
+
+						</div>
+
+					</div> <!-- end of col-md-8 -->
+				</div> <!-- end of row -->
+
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="qr">
+							<p class="qr-header">Unlock Promo</p>
+							<form action="/action_page.php">
+								<input type="text" name="promocode" placeholder="ENTER PROMO CODE">
+								<br>
+								<div class="buttons">
+									<input type="button" class="button" value="SCAN QR">
+									<input type="button" class="button" value="SUBMIT">
+								</div>
+							</form> 
+						</div>
+
+						
+
+					</div> <!-- end of col-md-12 -->
+				</div> <!-- end of row -->
+
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="ach-header">
+							ACHIEVEMENTS
+						</div>
+
+						<div class="ach-element">
+							<div class="leftelement">2 EVENTS IN A WEEK</div>
+							<div class="rightelement">
+								5<br />POINTS
+							</div>
+						</div>
+
+						<div class="ach-element">
+							<div class="leftelement">PURCHASE OVER $200</div>
+							<div class="rightelement">
+								15<br />POINTS
+							</div>
+						</div>
+
+					</div> <!-- end of col-md-12 -->
+				</div>
+
+			</div> <!-- end of main -->
+
+		</div> <!-- end of container -->
+
+	</div> <!-- end of data-role=page -->
+
+	<!-- multi item slider scripts -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	
+	<script>
+		function w3_open() {
+			document.getElementById("mySidebar").style.display = "block";
+		}
+		function w3_close() {
+			document.getElementById("mySidebar").style.display = "none";
+		}
+	</script>
+	
+
+
+</body>
+</html>
