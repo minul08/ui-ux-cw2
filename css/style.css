@@ -226,6 +226,10 @@ a, a:hover{
   cursor: pointer;
 }
 
+ .regular [type=button]{
+  display: none !important;
+}
+
 /*account page ==========================================================================*/
 .profilepic{
   background-image: url(../assets/images/profileimage.jpeg);
