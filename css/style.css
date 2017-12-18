@@ -216,7 +216,17 @@ h1, h2, h3, h4, h5, h6{
   width: 16%!important;
 }
 
-/*account page */
+.portfolio-area{
+  margin-bottom: 50px;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: black!important;
+  cursor: pointer;
+}
+
+/*account page ==========================================================================*/
 .profilepic{
   background-image: url(../assets/images/profileimage.jpeg);
   background-position: 50% 50%;
@@ -292,6 +302,94 @@ h1, h2, h3, h4, h5, h6{
   float: right;
 }
 
+/* end of account page ========================================================== */
+
+/* cart page styles ============================================================== */
+.cart-area{
+  margin: 50px 100px;
+  background-color: #b7c2fd;
+}
+
+.cart-header{
+  background-color: #a4b2ff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700!important;
+
+}
+
+/* end of cart page styles =============================================================== */
+
+/* generic page styles ============================================================= */
+.searchdiv{
+  margin: 40px 0px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+    /*margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;*/
+  }
+
+
+  /* end of generic page styles =================================================== */
+
+  /* specific page styles ============================================================= */
+
+  .storename{
+    margin: 0px 40px;
+  }
+
+  .specific-image{
+    width: 60%;
+    margin: 25px 60px;
+  }
+
+  .heart-icon{
+    display: inline-block;
+  }
+
+  .specific-description{
+    background-color: #b7c2fd;
+    margin: 0px 30px;
+    height: 200px;
+  }
+
+  .specific-price{
+    background-color: #a4b2ff;
+    margin: 40px 30px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700!important;
+  }
+
+  .specific-price .leftelement{
+    display: inline-block;
+  }
+
+  .specific-price .rightelement{
+    text-align: right;
+    display: inline-block;
+    float: right;
+  }
+
+  .regular{
+   width: 95% !important;
+
+ }
+
+ .bestseller{
+  background: #98a8fc;
+  padding: 10px 60px 15px;
+  margin: 10px 30px;
+}
+
+/* end of specific page styles ============================================================= */
+
 @media only screen and (max-width: 500px) {
   .carousel-holder {
     margin-left: 0px;
@@ -308,5 +406,19 @@ h1, h2, h3, h4, h5, h6{
 
   .profilename{
     margin: 30px 30px;
+  }
+
+  .storename{
+    margin: 0px 30px;
+  }
+
+  .cart-area{
+    margin: 50px 10px;
+    background-color: #b7c2fd;
+  }
+
+  .specific-image{
+    width: 40%;
+    margin: 25px 60px;
   }
 }
