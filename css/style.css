@@ -765,7 +765,7 @@ input[type=text], select {
   .specific-description{
     /*background-color: #b7c2fd;*/
     margin: 0px 30px;
-    height: 200px;
+    /*height: 200px;*/
   }
 .event-specific-description{
     /*background-color: #b7c2fd;*/
@@ -943,5 +943,9 @@ input[type=text], select {
 
 .quantity{
   margin-top: 20px;
+}
+
+.bestseller{
+  padding: 0px;
 }
 }
