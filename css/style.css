@@ -828,6 +828,21 @@ input[type=text], select {
   margin: 10px 30px;
 }
 
+.googlemap {
+        position: relative;
+        padding-bottom: 75%; /* 4:3 ratio*/
+        height: 0;
+        overflow: hidden;
+}
+
+.googlemap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 /* end of specific page styles ============================================================= */
 
 @media only screen and (max-width: 500px) {
