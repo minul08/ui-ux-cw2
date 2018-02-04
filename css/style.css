@@ -934,4 +934,9 @@ input[type=text], select {
 .tab-header{
   width: 100%;
 }
+
+.panel-group {
+    margin-top: 40px;
+    margin-right: 0px;
+}
 }
