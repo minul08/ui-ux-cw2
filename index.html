@@ -508,8 +508,6 @@
 						</div>
 					</div>
 
-
-
 					<!-- <div id="Tokyo" class="w3-container city" style="display:none">
 						<h2>Tokyo</h2>
 						<p>Tokyo is the capital of Japan.</p>
@@ -526,8 +524,8 @@
 	</div> <!-- end of data-role=page -->
 
 	<!-- End of Home Page ============================================================================================== -->
-	<!-- Start of About Page ======================================================================================== -->
 
+	<!-- Start of About Page ======================================================================================== -->
 	<!-- jquery mobile tag to indicate start of page -->
 	<div data-role="page" id="about-us">
 
@@ -617,24 +615,39 @@
 									<div id="map2" class="googleMap"></div>
 									<script>
 										function initMap() {
-											var uluru = {lat: 6.932329, lng: 79.849354};
-											var two = {lat:  6.989240, lng: 79.893257};
-											var three = {lat: 6.975175, lng: 79.924212};
+                                            var locations = [
+                                                ['Store Seven',6.873156, 79.861685, 7],
+                                                ['Store Six', 6.893326, 79.882223, 6],
+                                                ['Store One', 6.932329, 79.849354, 4],
+                                                ['Store Two', 6.989240, 79.893257, 5],
+                                                ['Store Three', 6.975175, 79.924212, 3],
+                                                ['Store Four', 6.868001, 79.886113, 2],
+                                                ['Store Five', 6.816022, 79.877326, 1]
+                                            ];
 
-											var map = new google.maps.Map(document.getElementById('map2'), {
-												zoom: 11,
-												center: uluru
-											});
-											var marker = new google.maps.Marker({
-												position: uluru,
-												map: map
-											});
+                                            var mapOne = new google.maps.Map(document.getElementById('map2'), {
+                                                zoom: 15,
+                                                center: new google.maps.LatLng(6.989240, 79.893257),
+                                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                                            });
+                                            var infowindow = new google.maps.InfoWindow();
+                                            var marker, i;
 
-										}
+                                            for (i = 0; i < locations.length; i++) {
+                                                marker = new google.maps.Marker({
+                                                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                                                    map: mapOne
+                                                });
+
+                                                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                                                    return function () {
+                                                        infowindow.setContent(locations[i][0]);
+                                                        infowindow.open(mapOne, marker);
+                                                    }
+                                                })(marker, i));
+                                            }
+                                        }
 									</script>
-									<script async defer
-									src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
-								</script>
 
 							</div>
 							<div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
@@ -749,9 +762,8 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 wow zoomIn" data-wow-duration="2s" data-wow-delay="300ms">
-								<p>Awesome Aires Template is ready for
-									<br> Business, Agency, Landing or Creative Portfolio
-									<br>Aires is Responsive and help you to grow your business</p>
+								<p>
+									<br> Spend less. Read more.</p>
 								</div>
 							</div>
 						</div>
@@ -764,7 +776,8 @@
 								<div class="col-md-12">
 									<div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
 										<h2>Our Team</h2>
-										<p>ipso facto</p>
+										<p>We know books. Books are all we do.
+                                        </p>
 									</div>
 								</div>
 							</div>
@@ -1769,9 +1782,7 @@
 										}
 									</script>
 
-									<script async defer
-									src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
-								</script>
+
 
 
 							</div> <!-- end of main -->
@@ -2143,7 +2154,9 @@
 		$(".discount-port").hide();
 	});
 </script>
-
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
+    </script>
 
 </body>
 </html>
