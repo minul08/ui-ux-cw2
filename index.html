@@ -711,11 +711,11 @@
 
 								<div class="store-heading">
 
-								<h1 class="storeheadingparts-1">STORE NAME</h1>
-								<br />
-								<h3 class="storeheadingparts-2">DESCRIPTION</h3>
+									<h1 class="storeheadingparts-1">STORE NAME</h1>
+									<br />
+									<h3 class="storeheadingparts-2">DESCRIPTION</h3>
 
-							</div>
+								</div>
 							</div>
 
 
@@ -738,110 +738,279 @@
 					</div> <!-- end of row -->
 
 					<!-- portfolio and favorites tab -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="portfolio-area" style="width: 100%;">
-								<div class="row" style="background: rgba(200, 208, 251, 0.3); margin: 0 auto; display: table;">
-									<ul class="nav nav-tabs">
-										<li class="active" style="width: 33%"><a data-toggle="tab" href="#products">Products</a></li>
-										<li style="width: 33%"><a data-toggle="tab" href="#discounts">Discounts</a></li>
-										<li style="width: 34%"><a data-toggle="tab" href="#events">Events</a></li>
-									</ul>
-									<div class="tab-content">
-										<!-- products tab -->
-										<div id="products" class="tab-pane fade in active">
-											<!-- Home Tab Content -->
-											<div class="row" style="margin: 0 auto; display: table;">
-												<div class="display-item">
-													<img src="assets/images/Captain-America.jpg" class="img-rounded">
-													<div class="display-item-text" style="width: 80%">
-														<a href="#"><h2>Book Name</h2></a>
-														<a href="#"><h3>Author</h3></a>
-													</div>
-													<div class="display-item-text" style="width: 10%">
-														<i class="fa fa-heart" aria-hidden="true"></i>
-														<a href="#"><h3>$7</h3></a>
-													</div>
-												</div>
-											</div>
-											<div class="row" style="margin: 0 auto; display: table;">
-												<div class="display-item">
-													<img src="assets/images/Captain-America.jpg" class="img-rounded">
-													<div class="display-item-text" style="width: 80%">
-														<a href="#"><h2>Book Name</h2></a>
-														<a href="#"><h3>Author</h3></a>
-													</div>
-													<div class="display-item-text" style="width: 10%">
-														<i class="fa fa-heart" aria-hidden="true"></i>
-														<a href="#"><h3>$7</h3></a>
-													</div>
-												</div>
-											</div>
-											<div class="row" style="margin: 0 auto; display: table;">
-												<div class="display-item">
-													<img src="assets/images/Captain-America.jpg" class="img-rounded">
-													<div class="display-item-text" style="width: 80%">
-														<a href="#"><h2>Book Name</h2></a>
-														<a href="#"><h3>Author</h3></a>
-													</div>
-													<div class="display-item-text" style="width: 10%">
-														<i class="fa fa-heart" aria-hidden="true"></i>
-														<a href="#"><h3>$7</h3></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!--discounts tab -->
-										<div id="discounts" class="tab-pane fade">
-											<div class="row" style="margin: 0 auto; display: table;">
-												<div class="display-item">
-													<img src="assets/images/Captain-America.jpg" class="img-rounded">
-													<div class="display-item-text" style="width: 80%">
-														<a href="#"><h2>Book Name</h2></a>
-														<a href="#"><h3>Author</h3></a>
-													</div>
-													<div class="display-item-text" style="width: 10%">
-														<i class="fa fa-heart" aria-hidden="true"></i>
-														<a href="#"><h3>20% OFF</h3></a>
-													</div>
-												</div>
-											</div>
-										</div> <!-- end of discounts -->
-										<!--events tab -->
-										<div id="events" class="tab-pane fade">
-											<div class="row" style="margin: 0 auto;">
-												<div class="display-item">
-													<img src="assets/images/bookfair.jpeg" class="img-rounded">
-													<div class="display-item-text" style="width: 70%">
-														<a href="#event-specific2"><h2>Colombo International Book Fair</h2></a>
-														<a href="#"><h3>Location</h3></a>
-													</div>
-													<div class="display-item-text" style="width: 20%">
-														<i class="fa fa-heart" aria-hidden="true"></i>
-														<a href="#"><h3>Details</h3></a>
-													</div>
-												</div>
-											</div>
-											<div class="row" style="margin: 0 auto; width:100%;">
-												<div class="display-item">
-													<img src="assets/images/BigBadWolf.png" class="img-rounded">
-													<div class="display-item-text" style="width: 70%">
-														<a href="#event-specific"><h2>Big Bad Wolf Sale</h2></a>
-														<a href="#"><h3>Location</h3></a>
-													</div>
-													<div class="display-item-text" style="width: 20%">
-														<i class="fa fa-heart" aria-hidden="true"></i>
-														<a href="#"><h3>Details</h3></a>
-													</div>
-												</div>
-											</div>
+					<div class="w3-container">
 
-										</div> <!-- end of events -->
-									</div> <!-- end of tab content -->
+						<div class="w3-row">
+							<a href="javascript:void(0)" onclick="openCity(event, 'Products');">
+								<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding w3-border-red">Products</div>
+							</a>
+							<a href="javascript:void(0)" onclick="openCity(event, 'Discounts');">
+								<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Discounts</div>
+							</a>
+							<a href="javascript:void(0)" onclick="openCity(event, 'Events');">
+								<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Events</div>
+							</a>
+						</div>
+
+						<div id="Products" class="w3-container city" style="display:block">
+							<div class="tab-part">
+
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
 								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Product Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Product Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Price
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										$ 20
+									</h5>
+								</div>
+								
 							</div>
-						</div> <!-- end of col-md-12 -->
-					</div> <!-- end of row -->
+							<div class="tab-part">
+								
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
+								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Product Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Product Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Price
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										$ 3
+									</h5>
+								</div>
+								
+							</div>
+						</div>
+
+						<div id="Discounts" class="w3-container city" style="display:none">
+							<div class="tab-part">
+
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
+								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Product Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Product Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Discount
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										30%
+									</h5>
+								</div>
+								
+							</div>
+							<div class="tab-part">
+
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
+								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Product Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Product Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Discount
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										30%
+									</h5>
+								</div>
+								
+							</div>
+							<div class="tab-part">
+
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
+								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Product Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Product Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Discount
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										30%
+									</h5>
+								</div>
+								
+							</div>
+							<div class="tab-part">
+
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
+								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Product Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Product Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Discount
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										30%
+									</h5>
+								</div>
+								
+							</div>
+						</div>
+
+						<div id="Events" class="w3-container city" style="display:none">
+							<div class="tab-part">
+
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
+								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Event Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Event Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Date
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										04/02/2018
+									</h5>
+								</div>
+								
+							</div>
+
+							<div class="tab-part">
+
+								<div class="col-md-2 generic-product-mobile">
+									<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
+								</div>
+
+								<div class="col-md-7">
+									<h3 class="generic-product-name">
+										Event Name
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-description">
+										Event Description
+									</h5>
+								</div>
+
+								<div class="col-md-3">
+									<h3 class="generic-product-price-header">
+										Date
+									</h3>
+
+									<br />
+
+									<h5 class="generic-product-price-cost">
+										04/02/2018
+									</h5>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- end of tab -->
 
 				</div> <!-- end of main -->
 
@@ -1083,57 +1252,57 @@
 							<div class="cart-header">
 								CART
 							</div>
-													<div class="row" style=" display: table;">
-							<div class="display-item">
-								<img src="assets/images/Captain-America.jpg" class="img-rounded">
-								<div class="display-item-text-one">
-									<a href="#"><h2>Name</h2></a>
-									<a href="#"><h3>Author</h3></a>
-								</div>
-								<div class="display-item-text-two">
-									<i class="fa fa-heart" aria-hidden="true"></i>
-									<a href="#"><h3>$7</h3></a>
-								</div>
-								<div class="display-item-text-three">
-									<div class="quantity">
-									Qty: 2
-								</div>
-									<br />
-									<div class="plus-button">
-										+
+							<div class="row" style=" display: table;">
+								<div class="display-item">
+									<img src="assets/images/Captain-America.jpg" class="img-rounded">
+									<div class="display-item-text-one">
+										<a href="#"><h2>Name</h2></a>
+										<a href="#"><h3>Author</h3></a>
 									</div>
-									<div class="minus-button">
-										-
+									<div class="display-item-text-two">
+										<i class="fa fa-heart" aria-hidden="true"></i>
+										<a href="#"><h3>$7</h3></a>
+									</div>
+									<div class="display-item-text-three">
+										<div class="quantity">
+											Qty: 2
+										</div>
+										<br />
+										<div class="plus-button">
+											+
+										</div>
+										<div class="minus-button">
+											-
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="row" style=" display: table;">
-							<div class="display-item">
-								<img src="assets/images/Captain-America.jpg" class="img-rounded">
-								<div class="display-item-text-one">
-									<a href="#"><h2>Name</h2></a>
-									<a href="#"><h3>Author</h3></a>
-								</div>
-								<div class="display-item-text-two">
-									<i class="fa fa-heart" aria-hidden="true"></i>
-									<a href="#"><h3>$7</h3></a>
-								</div>
-								<div class="display-item-text-three">
-									<div class="quantity">
-									Qty: 1
-								</div>
-									<br />
-									<div class="plus-button">
-										+
+							<div class="row" style=" display: table;">
+								<div class="display-item">
+									<img src="assets/images/Captain-America.jpg" class="img-rounded">
+									<div class="display-item-text-one">
+										<a href="#"><h2>Name</h2></a>
+										<a href="#"><h3>Author</h3></a>
 									</div>
-									<div class="minus-button">
-										-
+									<div class="display-item-text-two">
+										<i class="fa fa-heart" aria-hidden="true"></i>
+										<a href="#"><h3>$7</h3></a>
+									</div>
+									<div class="display-item-text-three">
+										<div class="quantity">
+											Qty: 1
+										</div>
+										<br />
+										<div class="plus-button">
+											+
+										</div>
+										<div class="minus-button">
+											-
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 						</div>
 					</div>
 
@@ -1570,6 +1739,7 @@
 		evt.currentTarget.firstElementChild.className += " w3-border-red";
 	}
 </script>
+
 
 </body>
 </html>
