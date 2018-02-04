@@ -1317,175 +1317,168 @@
 
 				<!-- End of Store Generic Page ============================================================================================= -->
 
-				<!-- Start of Store Specific Page ========================================================================================== -->
+    <!-- Start of Store Specific Page ========================================================================================== -->
 
-				<div data-role="page" id="store-specific-page">
+    <div data-role="page" id="store-specific-page">
 
-					<div class="container-fluid">
+        <div class="container-fluid">
 
-						<!-- top navigation bar -->
-						<div class="top-nav-bar">
-							<ul>
-								<li class="top-nav-items left-indent"><a href="#pageone" data-transition="flip" style="padding: 0px 15px;">BookMart.LK</a></li>
-								<li  class="top-nav-items"><a href="#account-page" data-transition="flip"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-								<li class="top-nav-items"><a href="#pageone" data-transition="flip"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-								<li class="top-nav-items"><a href="#cart-page" data-transition="flip"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
+            <!-- top navigation bar -->
+            <div class="top-nav-bar">
+                <ul>
+                    <li class="top-nav-items left-indent"><a href="#pageone" data-transition="flip" style="padding: 0px 15px;">BookMart.LK</a></li>
+                    <li  class="top-nav-items"><a href="#account-page" data-transition="flip"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li class="top-nav-items"><a href="#pageone" data-transition="flip"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                    <li class="top-nav-items"><a href="#cart-page" data-transition="flip"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
 
-						<!-- sidebar -->
-						<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="storeSpecificSidebar">
-							<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="storespecific_close()">&times;</button>
-							<div style="margin-top: 20px;">
-								<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
-								<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
-								<a href="#store-specific-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-globe"></i>  STORES</a>
-								<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-money"></i>  DISCOUNTS</a>
-								<a href="#game" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
-							</div>
+            <!-- sidebar -->
+            <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="storeSpecificSidebar">
+                <button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="storespecific_close()">&times;</button>
+                <div style="margin-top: 20px;">
+                    <a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
+                    <a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+                    <a href="#store-specific-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-globe"></i>  STORES</a>
+                    <a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-money"></i>  DISCOUNTS</a>
+                    <a href="#game" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
+                </div>
 
-							<div class="shopping-cart-side-bar">
-								<h2>CART SUMMARY</h2>
-								<div class="item">
-									<div class="left-items">
-										<h3>Name</h3>
-										<h4>Author</h4>
-									</div>
-									<div class="right-items">
-										<h3>$7</h3>
-									</div>
-								</div>
-								<div class="item">
-									<div class="left-items">
-										<h3> Total </h3>
-									</div>
-									<div class="right-items">
-										<h3>$7</h3>
-									</div>
-								</div>
-							</div>
+                <div class="shopping-cart-side-bar">
+                    <h2>CART SUMMARY</h2>
+                    <div class="item">
+                        <div class="left-items">
+                            <h3>Name</h3>
+                            <h4>Author</h4>
+                        </div>
+                        <div class="right-items">
+                            <h3>$7</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left-items">
+                            <h3> Total </h3>
+                        </div>
+                        <div class="right-items">
+                            <h3>$7</h3>
+                        </div>
+                    </div>
+                </div>
 
-						</div>
+            </div>
 
-						<!-- main content area -->
-						<div class="w3-main" style="margin-left:200px; margin-top: 40px;">
-							<!-- mobile menu button -->
-							<div class="w3-purple">
-								<button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="storespecific_open()">&#9776;</button>
-								<div class="w3-container">
-								</div>
-							</div>
-							<!-- end of mobile menu button -->
-
-							<div class="row">
-								<div class="col-md-12">
-									<div class="storename">
-										<h1>
-											STORE NAME
-										</h1>
-									</div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-3">
-
-									<img src="assets/images/Captain-America.jpg" class="specific-image"/>
-
-								</div> <!-- end of col-md-4 -->
-								<div class="col-md-9">
-
-									<div class="profilename">
-
-										<h1>ITEM/EVENT NAME</h1>
-										<h3 class="heart-icon"><a><i class="fa fa-heart" aria-hidden="true"></i></a></h3>
-										<input type="button" class="button-specific-add-cart" value="ADD TO CART">
-
-									</div>
-
-								</div> <!-- end of col-md-8 -->
-							</div> <!-- end of row -->
+            <!-- main content area -->
+            <div class="w3-main" style="margin-left:200px; margin-top: 40px;">
+                <!-- mobile menu button -->
+                <div class="w3-purple">
+                    <button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="storespecific_open()">&#9776;</button>
+                    <div class="w3-container">
+                    </div>
+                </div>
+                <!-- end of mobile menu button -->
 
 
-							<div class="row">
-								<div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="storename">
+                            <h1>
+                                Expographics
+                            </h1>
 
-									<div class="specific-description">
-										<p class="specific-description-header">Description</p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in metus nec orci hendrerit efficitur. In ac dolor sit amet magna finibus sodales ac vel leo. Praesent eget rhoncus enim, vitae aliquet mauris. Nullam varius purus erat, non consequat felis gravida sed. Nam ac velit sed risus porttitor placerat vel non nibh. Vivamus lacus velit, blandit eu lectus ut, feugiat consectetur quam. Mauris accumsan ex eget purus porta, eu pretium dui sodales. Quisque vel bibendum massa. Cras condimentum placerat metus ac consequat. Duis laoreet sem sed congue placerat.
-									</div>
-
-
-
-								</div> <!-- end of col-md-12 -->
-							</div> <!-- end of row -->
-
-
-							<div class="row">
-								<div class="col-md-12">
-
-									<div class="specific-price">
-										<div class="leftelement">PRICE</div>
-										<div class="rightelement">
-											$ 7
-										</div>
-									</div>
-
-								</div> <!-- end of col-md-12 -->
-							</div>
-
-							<div class="row">
-								<div class="col-md-12">
-
-									<div class="bestseller">
-
-										<h1>OTHER BEST SELLERS</h1>
-
-										<section class="regular slider">
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 1">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 2">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 3">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 4">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 5">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 6">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 7">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 8">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=BOOK 9">
-											</div>
-										</section>
-
-									</div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/images/Content/swShattered.jpg" class="specific-image"/>
+                                </div> <!-- end of col-md-4 -->
+                                <div class="col-md-9">
+                                    <div class="profilename">
+                                        <h1>Star Wars:Shattered Empire</h1>
+                                        <h3 class="heart-icon"><a><i class="fa fa-heart" aria-hidden="true"></i></a></h3>
+                                        <input type="button" class="button-specific-add-cart" value="ADD TO CART">
+                                    </div>
+                                </div> <!-- end of col-md-8 -->
+                            </div> <!-- end of row -->
 
 
-								</div> <!-- end of col-md-12 -->
-							</div> <!-- end of row -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="specific-description">
+                                        <p class="specific-description-header">Description</p>
+                                        For the first time in the new Star Wars canon, journey with us into the time after
+                                        the end of Star Wars Episode VI Return of the Jedi! Writer Greg Rucka (PUNISHER,
+                                        WOLVERINE, Gotham Central) and artist Marco Checchetto (AVENGERS WORLD, PUNISHER)
+                                        take us past the destruction of the second Death Star and into the chaos of a
+                                        Shattered Empire. It's the explosive lead&ndash;in to this winter's blockbuster
+                                        big&ndash;screen Star Wars revival, and everything you need to know is right here!
+                                        Plus, follow everyone's favorite protocol droid as he Journeys to Star Wars:
+                                        The Force Awakens. COLLECTING: JOURNEY TO STAR WARS: THE FORCE AWAKENS &ndash;
+                                        SHATTERED EMPIRE 1&ndash;4,
+                                        STAR WARS SPECIAL: C&ndash;3PO 1
+                                    </div>
+                                    </div> <!-- end of col-md-12 -->
+                                </div> <!-- end of row -->
 
-						</div> <!-- end of main -->
 
-					</div> <!-- end of container -->
+                                <div class="row">
+                                    <div class="col-md-12">
 
-				</div> <!-- end of data-role=page -->
+                                        <div class="specific-price">
+                                            <div class="leftelement">PRICE</div>
+                                            <div class="rightelement">
+                                                $ 19.99
+                                            </div>
+                                        </div>
 
-				<!-- End of Store Specific Page ============================================================================================= -->
+                                    </div> <!-- end of col-md-12 -->
+                                </div>
 
-				<!-- Start of Cart Page ============================================================================================= -->
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <div class="bestseller">
+
+                                            <section class="regular slider">
+                                                <div>
+                                                    <img src="assets/images/Content/vader.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/Lion.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/sw1.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/sw7.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/kanaan.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/LFOTH.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/wolv.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/breath.jpeg">
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/Content/now.jpg">
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div> <!-- end of col-md-12 -->
+                                </div> <!-- end of row -->
+
+                            </div> <!-- end of main -->
+
+                        </div> <!-- end of container -->
+
+                    </div> <!-- end of data-role=page -->
+
+                    <!-- End of Store Specific Page ============================================================================================= -->
+
+
+                    <!-- Start of Cart Page ============================================================================================= -->
 
 				<div data-role="page" id="cart-page">
 
