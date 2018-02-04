@@ -620,8 +620,10 @@
 									</div>
 									<h4>Store Locations</h4>
 
-									<div id="map" class="googleMap"></div>
-								</div>
+									<div id="mapTwo"></div>
+								<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15844.539744113843!2d79.87034121685794!3d6.874431574739125!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1517766335989" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+
+							</div>
 								<div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
 
 									<!-- Start Accordion Section -->
@@ -1900,17 +1902,16 @@
 </script>
 <!--Google Maps-->
 <script>
-	var map, map2;
-
 	function initMap() {
 		var locations = [
-		['Store Seven',6.873156, 79.861685, 7],
-		['Store Six', 6.893326, 79.882223, 6],
-		['Store One', 6.932329, 79.849354, 4],
-		['Store Two', 6.989240, 79.893257, 5],
-		['Store Three', 6.975175, 79.924212, 3],
-		['Store Four', 6.868001, 79.886113, 2],
-		['Store Five', 6.816022, 79.877326, 1]
+		['Jeya Book Center',6.873156, 79.861685, 7],
+		['TheBookStore', 6.893326, 79.882223, 6],
+		['BooksLK', 6.932329, 79.849354, 4],
+		['Makeen Books', 6.989240, 79.893257, 5],
+		['MD Gunasena', 6.975175, 79.924212, 3],
+		['Sarasavi', 6.868001, 79.886113, 2],
+			['Expographics', 6.888285, 79.931659, 8],
+		['Vijitha Yapa', 6.816022, 79.877326, 1]
 		];
 		var singleLocation = {lat: 6.932329, lng: 79.849354};
 		var nightOptions={
@@ -1997,13 +1998,28 @@
 			}
 			]
 		}
+        //Events Map
 		var map = new google.maps.Map(document.getElementById('map1'),nightOptions);
-        var mapTwo = new google.maps.Map(document.getElementById('map1'),nightOptions);
-
         var marker = new google.maps.Marker({
-			position: singleLocation,
-			map: map
-		});
+            position: singleLocation,
+            map: map
+        });
+		//About Us Map
+        var mapTwo = new google.maps.Map(document.getElementById('mapTwo'),nightOptions);
+        var infowindow = new google.maps.InfoWindow();
+        var markerTwo, i;
+        for (i = 0; i < locations.length; i++) {
+            markerTwo = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: mapTwo
+            });
+            google.maps.event.addListener(markerTwo, 'click', (function (markerTwo, i) {
+                return function () {
+                    infowindow.setContent(locations[i][0]);
+                    infowindow.open(mapTwo, markerTwo);
+                }
+            })(markerTwo, i));
+        }
 	}
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap"

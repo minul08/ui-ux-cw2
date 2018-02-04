@@ -329,6 +329,11 @@ a, a:hover{
     height: 300px;
     position: relative;
 }
+#mapTwo{
+    margin: auto;
+    height: 300px;
+    position: relative;
+}
 .profilename{
   margin: 100px 0px;
 }
