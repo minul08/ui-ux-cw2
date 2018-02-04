@@ -472,6 +472,7 @@ a, a:hover{
 .quantity{
   display: inline-block;
   font-size: 20px;
+
 }
 
 .plus-button{
@@ -938,5 +939,9 @@ input[type=text], select {
 .panel-group {
     margin-top: 40px;
     margin-right: 0px;
+}
+
+.quantity{
+  margin-top: 20px;
 }
 }
