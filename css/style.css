@@ -420,6 +420,18 @@ font-size: 20px;
 
 /* generic page styles ============================================================= */
 
+.generic-product-image{
+  width: 75%;
+}
+
+
+
+.tab-part{
+  display: inline-block;
+  margin: 20px 0px;
+    padding-bottom: 20px;
+    border-bottom: #f44336 solid 1px;
+}
 
 
 .searchdiv{
@@ -591,5 +603,36 @@ input[type=text], select {
 .store-heading {
     margin: 0px;
     padding: 0px 20px;
+}
+
+.generic-product-name{
+
+  margin-top: 20px;
+  margin-bottom: 0px;
+
+}
+
+.generic-product-description{
+  margin-top: -10px;
+  margin-bottom: 0px;
+
+}
+
+.generic-product-price-header{
+
+   margin-top: 30px;
+  margin-bottom: 0px;
+
+}
+
+.generic-product-price-cost{
+
+   margin-top: -10px;
+  margin-bottom: 0px;
+
+}
+
+.generic-product-mobile{
+  text-align: center;
 }
 }
