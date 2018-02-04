@@ -2,6 +2,10 @@ body{
   text-shadow: none;
 }
 
+.ui-link:hover{
+  color: #f7ca18!important;
+}
+
 .carousel-control.left, .carousel-control.right {
   margin-right: 0px;
   margin-left: 0px;
