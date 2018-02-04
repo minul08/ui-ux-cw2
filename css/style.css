@@ -10,6 +10,10 @@ a:hover, a:visited, a:focus{
     background-color: #f7ca18!important;
 }
 
+.w3-border-red, .w3-hover-border-red:hover {
+    border-color: #f7ca18!important;
+}
+
 .panel-group {
     margin-right: 40px;
 }
@@ -536,7 +540,7 @@ font-size: 20px;
   display: inline-block;
   margin: 20px 0px;
     padding-bottom: 20px;
-    border-bottom: #f44336 solid 1px;
+    border-bottom: #f7ca18 solid 1px;
     width: 100%
 }
 
