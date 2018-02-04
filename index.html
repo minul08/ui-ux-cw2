@@ -1998,7 +1998,9 @@
 			]
 		}
 		var map = new google.maps.Map(document.getElementById('map1'),nightOptions);
-		var marker = new google.maps.Marker({
+        var mapTwo = new google.maps.Map(document.getElementById('map1'),nightOptions);
+
+        var marker = new google.maps.Marker({
 			position: singleLocation,
 			map: map
 		});
@@ -2042,8 +2044,6 @@ async defer></script>
 		$(".discount-port").hide();
 	});
 </script>
-
-
 </body>
 </html>
 
