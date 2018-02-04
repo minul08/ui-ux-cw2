@@ -1,0 +1,324 @@
+<html>
+<head>
+    <meta ccharset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jquery mobile cdn -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css">
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <!-- css files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jquery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- fonts -->
+    <script src="https://use.fontawesome.com/7f9d770c21.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <style type="text/css">
+
+  /* ----------------------------------*/
+  /* Start Team Member Section         */
+  /* ----------------------------------*/
+
+
+  #team-section {
+      padding-top: 80px;
+      padding-bottom: 120px;
+      background: #fff;
+      color: #111;
+      overflow: hidden;
+  }
+
+  #team-section .section-title h2 {
+      //color: #fff;
+  }
+
+  #team-section .section-title p {
+      //color: #fff;
+  }
+
+  .team-member {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .team-member .team-details {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 67, 46, 0.8);
+      color: #fff;
+      padding: 0 2px;
+      opacity: 0;
+      text-align: center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+
+  .team-member .team-details h4 {
+      padding-top: 15%;
+      padding-bottom: 5%;
+      font-size: 22px;
+      font-family: 'Oswald', sans-serif;
+  }
+
+  .team-member .team-details p {
+      padding-bottom: 20%;
+      font-size: 16px;
+      color: #fff;
+  }
+
+
+  .team-member .team-details li {
+      display: inline-block;
+      padding-top: 20px;
+  }
+
+  .team-member .team-details li a {
+      padding: 8px 12px;
+      background: #fff;
+      border: 1px solid transparent;
+      color: #111;
+      font-size: 16px;
+  }
+
+  .team-member .team-details li:hover a {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+  }
+
+
+  .team-details h4,
+  .team-details p,
+  .team-details li{
+      -webkit-transition: -webkit-transform 0.35s;
+  	transition: transform 0.35s;
+  	-webkit-transform: translate3d(0,200%,0);
+  	transform: translate3d(0,200%,0);
+  }
+
+  .team-member:hover .team-details h4,
+  .team-member:hover .team-details p,
+  .team-member:hover .team-details li {
+      -webkit-transform: translate3d(0,0,0);
+  	transform: translate3d(0,0,0);
+  }
+
+  .team-member:hover .team-details {
+      opacity: 1;
+      filter: Alpha(Opacity=100);
+  }
+
+  .team-member:hover .team-details h4 {
+      -webkit-transition-delay: 0.1s;
+  	transition-delay: 0.1s;
+  }
+
+  .team-member:hover .team-details p {
+      -webkit-transition-delay: 0.15s;
+  	transition-delay: 0.15s;
+  }
+
+  .team-member:hover .team-details li:nth-child(n+1) {
+      -webkit-transition-delay: 0.2s;
+  	transition-delay: 0.2s;
+  }
+
+  .team-member:hover .team-details li:nth-child(n+2) {
+      -webkit-transition-delay: 0.25s;
+  	transition-delay: 0.25s;
+  }
+
+  .team-member:hover .team-details li:nth-child(n+3) {
+      -webkit-transition-delay: 0.3s;
+  	transition-delay: 0.3s;
+  }
+
+  .team-member:hover .team-details li:nth-child(n+4) {
+      -webkit-transition-delay: 0.35s;
+  	transition-delay: 0.35s;
+  }
+
+  .team-member:hover .team-details li:nth-child(n+5) {
+      -webkit-transition-delay: 0.4s;
+  	transition-delay: 0.4s;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- Start Team Member Section -->
+<section id="team-section">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
+                <h2>Our Team</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
+            <div class="team-member">
+                <img src="asset/images/team/team-1.jpg" class="img-responsive" alt="">
+                <div class="team-details">
+                    <h4>John Doe</h4>
+                    <p>Founder & Director</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
+            <div class="team-member">
+                <img src="asset/images/team/team-2.jpg" class="img-responsive" alt="">
+                <div class="team-details">
+                    <h4>John Doe</h4>
+                    <p>Founder & Director</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="900ms">
+            <div class="team-member">
+                <img src="asset/images/team/team-3.jpg" class="img-responsive" alt="">
+                <div class="team-details">
+                    <h4>John Doe</h4>
+                    <p>Founder & Director</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.col-md-3 -->
+        <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1200ms">
+            <div class="team-member">
+                <img src="asset/images/team/team-4.jpg" class="img-responsive" alt="">
+                <div class="team-details">
+                    <h4>John Doe</h4>
+                    <p>Founder & Director</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.col-md-3 -->
+    </div>
+</div>
+</section>
+<!-- End Team Member Section -->    <!-- Start Team Member Section -->
+<section id="team-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
+                    <h2>Our Team</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
+                <div class="team-member">
+                    <img src="assets/images/team/team-1.jpg" class="img-responsive" alt="">
+                    <div class="team-details">
+                        <h4>John Doe</h4>
+                        <p>Founder & Director</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/shalukhya"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.col-md-3 -->
+            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
+                <div class="team-member">
+                    <img src="assets/images/team/team-2.jpg" class="img-responsive" alt="">
+                    <div class="team-details">
+                        <h4>John Doe</h4>
+                        <p>Founder & Director</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.col-md-3 -->
+            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="900ms">
+                <div class="team-member">
+                    <img src="assets/images/team/team-3.jpg" class="img-responsive" alt="">
+                    <div class="team-details">
+                        <h4>John Doe</h4>
+                        <p>Founder & Director</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.col-md-3 -->
+            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1200ms">
+                <div class="team-member">
+                    <img src="assets/images/team/team-4.jpg" class="img-responsive" alt="">
+                    <div class="team-details">
+                        <h4>John Doe</h4>
+                        <p>Founder & Director</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.col-md-3 -->
+        </div>
+    </div>
+</section>
+<!-- End Team Member Section -->
+</body>
+</html>
