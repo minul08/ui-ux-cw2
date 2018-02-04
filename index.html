@@ -423,7 +423,166 @@
                         </div>
                     </div>
                 </div>
+                <!-- Start About-section 2 -->
+                <section id="about-section-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-text">
+                                <h4>Store Operations</h4>
+                                    <p>Tel: +94 11 111 1111<br>
+                                    Fax: +94 11 111 1111<br>
+                                    Email: info@bookmart.lk<br>
+                                    <br>
+                                    Operating Hours<br>
+                                    Monday –Saturday: 10.00 a.m – 8.00 p.m<br>
+                                        Sunday: 10.00 a.m – 3.00 p.m<br></p>
+                                </div>
+                                <h4>Store Locations</h4>
 
+                                <div id="map2" class="googleMap"></div>
+                                <script>
+                                    function initMap() {
+                                        var uluru = {lat: 6.932329, lng: 79.849354};
+                                        var two = {lat:  6.989240, lng: 79.893257};
+                                        var three = {lat: 6.975175, lng: 79.924212};
+
+                                        var map = new google.maps.Map(document.getElementById('map2'), {
+                                            zoom: 11,
+                                            center: uluru
+                                        });
+                                        var marker = new google.maps.Marker({
+                                            position: uluru,
+                                            map: map
+                                        });
+
+                                    }
+                                </script>
+                                <script async defer
+                                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
+                                </script>
+
+                            </div>
+                            <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
+
+                                <!-- Start Accordion Section -->
+                                <div class="panel-group" id="accordion">
+
+                                    <!-- Start Accordion 1 -->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">
+                                                    <i class="fa fa-angle-left control-icon"></i> Who We are
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-1" class="panel-collapse collapse in">
+                                            <div class="panel-body">Welcome to Book Mart, one of Sri Lanka's leading specialist
+                                                bookstores. We're proud to offer more than 17 million titles at
+                                                low prices -- all with free delivery islandwide.
+                                                Whatever your interest or passion, you'll find something interesting in
+                                                our bookshop full of delights.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Accordion 1 -->
+
+                                    <!-- Start Accordion 2 -->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" class="collapsed">
+                                                    <i class="fa fa-angle-left control-icon"></i> Our Goal
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-2" class="panel-collapse collapse">
+                                            <div class="panel-body">Of the 30 million titles ever printed in the Sinhala,English
+                                                and Tamil languages only a few million of these are in print. We seek to make available
+                                                as many of these titles as possible (and working to do the same with foreign language titles).
+                                                This way, we will have the largest breadth of titles available in the country.</div>
+                                        </div>
+                                    </div>
+                                    <!-- End Accordion 2 -->
+
+                                    <!-- Start Accordion 3 -->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" class="collapsed">
+                                                    <i class="fa fa-angle-left control-icon"></i> Publishers & Distributors
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-3" class="panel-collapse collapse">
+                                            <div class="panel-body">We want to offer as many books as possible and we are
+                                                very keen to talk to publishers and distributors about supply arrangements.
+                                                Please do email us at procurements@bookmart.lk</div>
+                                        </div>
+                                    </div>
+                                    <!-- End Accordion 3 -->
+
+                                    <!-- Start Accordion 4 -->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-4" class="collapsed">
+                                                    <i class="fa fa-angle-left control-icon"></i> eBooks
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-4" class="panel-collapse collapse">
+                                            <div class="panel-body">We do not sell eBooks on Book Mart yet,it is certainly a
+                                                possibility that we will in the future.We do however sell thousands of
+                                                physical books, so have a browse and enjoy! </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Accordion 4 -->
+
+                                    <!-- Start Accordion 5 -->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-5" class="collapsed">
+                                                    <i class="fa fa-angle-left control-icon"></i> Delivery
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-5" class="panel-collapse collapse">
+                                            <div class="panel-body">Dispatch times may vary for each item even if they
+                                                are ordered at the same time.You'll get an email
+                                                when your item has been dispatched so you can start making room on your
+                                                shelves for your new books!
+
+                                                Once your order has been dispatched, we offer the following times for delivery in business days (Mon-Fri):</div>
+                                        </div>
+                                    </div>
+                                    <!-- End Accordion 5 -->
+
+                                </div>
+                                <!-- End Accordion section -->
+
+                            </div><!--/.col-md-6 -->
+                        </div>
+                    </div>
+                </section>
+                <!-- End About-section 2 -->
+
+
+                <!-- Start Call to Action Section -->
+                <section class="call-to-action">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 wow zoomIn" data-wow-duration="2s" data-wow-delay="300ms">
+                                <p>Awesome Aires Template is ready for
+                                    <br> Business, Agency, Landing or Creative Portfolio
+                                    <br>Aires is Responsive and help you to grow your business</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Call to Action Section -->
                 <!-- Start Team Member Section -->
                 <section id="team-section">
                     <div class="container">

@@ -367,7 +367,42 @@ a, a:hover{
 }
 
 /* end of account page ========================================================== */
+/*---------------------------------------------------------------*/
+/* Start Call To Action
+/*---------------------------------------------------------------*/
 
+
+.call-to-action {
+    background: url(../assets/images/parallax2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 90%;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.call-to-action p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 3px;
+}
+
+.call-to-action .btn-primary {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.call-to-action .btn-primary:hover {
+    background: transparent;
+}
+#about-section-2 {
+    background: #f9f9f9;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 /* cart page styles ============================================================== */
 .display-item-text-one{
   width: 70%;
