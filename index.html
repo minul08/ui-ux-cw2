@@ -189,18 +189,18 @@
 					<h2></h2>
 
 					<div class="w3-row">
-						<a href="javascript:void(0)" onclick="openCity(event, 'portfolio-tab');">
-							<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding w3-border-red">Portfolio</div>
+						<a href="javascript:void(0)" onclick="openCityone(event, 'portfolio-tab');">
+							<div class="w3-third tablinkone w3-bottombar w3-hover-light-grey w3-padding w3-border-red">Portfolio</div>
 						</a>
-						<a href="javascript:void(0)" onclick="openCity(event, 'favorite-tab');">
-							<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Favorties</div>
+						<a href="javascript:void(0)" onclick="openCityone(event, 'favorite-tab');">
+							<div class="w3-third tablinkone w3-bottombar w3-hover-light-grey w3-padding">Favorties</div>
 						</a>
 						<!-- <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
 							<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
 						</a> -->
 					</div>
 
-					<div id="portfolio-tab" class="w3-container city" style="display:block">
+					<div id="portfolio-tab" class="w3-container cityone" style="display:block">
 
 						<div class="row" id="game-item" style="display: table;">
 							<div class="display-item">
@@ -309,7 +309,7 @@
 
 					</div>
 
-					<div id="favorite-tab" class="w3-container city" style="display:none">
+					<div id="favorite-tab" class="w3-container cityone" style="display:none">
 						<div class="row" style=" display: table;">
 							<div class="display-item">
 								<img src="assets/images/Captain-America.jpg" class="img-rounded">
@@ -1579,6 +1579,22 @@ bootbox.confirm("Allow your camera to take a picture of a QR code?",
 	)
 
 }
+</script>
+
+<script>
+	function openCityone(evt, cityName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("cityone");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinkone");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.firstElementChild.className += " w3-border-red";
+	}
 </script>
 
 <script>
