@@ -32,6 +32,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<!--Bootbox for qr scanner confirm-->
+	<script type="text/javascript" src="js/bootbox.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 
@@ -393,6 +396,7 @@
 										   accept="image/*"
 										   capture=environment
 										   id="qrScan"
+										   onclick="return showQRIntro();"
 										   tabindex=-3>
 								</label>
 								<input type="button" class="button" style="display: inline;" value="SUBMIT">
@@ -1287,10 +1291,8 @@
 
 <!--QR Scanner Scripts-->
 <script type="text/javascript" src="js/filereader.js"></script>
-<script type="text/javascript" src="js/instascan.min.js"></script>
 <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
 </script>
-
 
 <script>
     function openQRCamera(node) {
@@ -1309,6 +1311,17 @@
         reader.readAsDataURL(node.files[0]);
     }
 
+    function showQRIntro() {
+//         return confirm("Allow your camera to take a picture of a QR code.");
+         bootbox.confirm("Allow your camera to take a picture of a QR code?",
+			 function(result) {
+                 if (result == "true") {
+                     return
+                 }
+             }
+             )
+
+    }
 </script>
 
 </body>

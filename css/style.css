@@ -406,10 +406,11 @@ input[type=text], select {
   background-size: contain!important;
   margin-left:2.7em;
   margin-bottom:1em!important;
+  padding-top: 5px;
   cursor:pointer!important;
   vertical-align: bottom;
 }
-.qrcode-text-btn > ui-input-text{
+.qrcode-text-btn > .ui-shadow-inset{
   opacity: 0!important;
   position: absolute;
 
