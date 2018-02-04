@@ -1496,14 +1496,14 @@
 						</div>
 						<!-- ===================================== -->
 					</div>
-					<div class="cart-paypal">
-						<div class="paypal">
-							Proceed to PayPal
-						</div>
-					</div>
+					<form action="your-server-side-code" method="POST">
+						<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh" data-amount="999"
+								data-name="Stripe.com" data-description="Example charge" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+								data-locale="auto" data-zip-code="true">
+						</script>
+					</form>
 				</div>
 			</div> <!-- end of main -->
-
 		</div> <!-- end of container -->
 	</div> <!-- end of data-role=page -->
 	<!-- End of Cart Page ============================================================================================= -->
