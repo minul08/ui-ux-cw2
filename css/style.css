@@ -368,15 +368,21 @@ a, a:hover{
 }
 
 .ach-header{
-  background-color: #a4b2ff;
+  /*background-color: #a4b2ff;*/
   margin: 40px 30px;
   padding: 20px;
   font-size: 20px;
   font-weight: 700!important;
+  border-bottom: #b7c2fd solid 1px;
+}
+
+.bars{
+      margin: 30px 50px;
+      font-size: 20px;
 }
 
 .ach-element{
-  background-color: #c5c5c5;;
+  /*background-color: #c5c5c5;;*/
   margin: 40px 30px;
   padding: 33px;
   font-size: 20px;
@@ -386,12 +392,13 @@ a, a:hover{
 
 .ach-element .leftelement{
   display: inline-block;
+  border-bottom: #b7c2fd solid 1px;
 }
 
 .ach-element .rightelement{
-  text-align: right;
+  /*text-align: right;
   display: inline-block;
-  float: right;
+  float: right;*/
 }
 
 /* end of account page ========================================================== */
