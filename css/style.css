@@ -6,6 +6,10 @@ a:hover, a:visited, a:focus{
   text-decoration: none !important;
 }
 
+.w3-purple, .w3-hover-purple:hover {
+    background-color: #f7ca18!important;
+}
+
 .panel-group {
     margin-right: 40px;
 }
