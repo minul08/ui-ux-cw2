@@ -2,6 +2,14 @@ body{
   text-shadow: none;
 }
 
+a:hover, a:visited, a:focus{
+  text-decoration: none !important;
+}
+
+.panel-group {
+    margin-right: 40px;
+}
+
 .ui-link:hover{
   color: #f7ca18!important;
 }
