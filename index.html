@@ -517,27 +517,42 @@
                                 </div>
                                 <h4>Store Locations</h4>
 
-                                <div id="map2" class="googleMap"></div>
+                                <div id="map" class="googleMap"></div>
                                 <script>
                                     function initMap() {
-                                        var uluru = {lat: 6.932329, lng: 79.849354};
-                                        var two = {lat:  6.989240, lng: 79.893257};
-                                        var three = {lat: 6.975175, lng: 79.924212};
+                                        var locations = [
+                                            ['Store One', 6.932329, 79.849354, 4],
+                                            ['Store Two', 6.989240, 79.893257, 5],
+                                            ['Store Three', 6.975175, 79.924212, 3],
+                                            ['Store Four', -33.80010128657071, 151.28747820854187, 2],
+                                            ['Store Five', -33.950198, 151.259302, 1]
+                                        ];
 
-                                        var map = new google.maps.Map(document.getElementById('map2'), {
-                                            zoom: 11,
-                                            center: uluru
+                                        var map = new google.maps.Map(document.getElementById('map'), {
+                                            zoom: 10,
+                                            center: new google.maps.LatLng(6.989240, 79.893257),
+                                            mapTypeId: google.maps.MapTypeId.ROADMAP
                                         });
-                                        var marker = new google.maps.Marker({
-                                            position: uluru,
-                                            map: map
-                                        });
+                                        var infowindow = new google.maps.InfoWindow();
+                                        var marker, i;
 
+                                        for (i = 0; i < locations.length; i++) {
+                                            marker = new google.maps.Marker({
+                                                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                                                map: map
+                                            });
+
+                                            google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                                                return function () {
+                                                    infowindow.setContent(locations[i][0]);
+                                                    infowindow.open(map, marker);
+                                                }
+                                            })(marker, i));
+                                        }
                                     }
+
                                 </script>
-                                <script async defer
-                                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
-                                </script>
+
 
                             </div>
                             <div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
@@ -1662,12 +1677,6 @@
 										});
 									}
 								</script>
-
-								<script async defer
-								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
-							</script>
-
-
 						</div> <!-- end of main -->
 					</div> <!-- end of container -->
 
@@ -1989,7 +1998,9 @@
 		evt.currentTarget.firstElementChild.className += " w3-border-red";
 	}
 </script>
-
+	<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
+	</script>
 
 </body>
 </html>
