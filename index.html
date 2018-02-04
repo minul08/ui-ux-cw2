@@ -607,48 +607,12 @@
 										Email: info@bookmart.lk<br>
 										<br>
 										Operating Hours<br>
-										Monday –Saturday: 10.00 a.m – 8.00 p.m<br>
-										Sunday: 10.00 a.m – 3.00 p.m<br></p>
+										Monday &ndash;	 Saturday: 10.00 a.m &ndash; 8.00 p.m<br>
+										Sunday: 10.00 a.m &ndash; 3.00 p.m<br></p>
 									</div>
 									<h4>Store Locations</h4>
 
-									<div id="map2" class="googleMap"></div>
-									<script>
-										function initMap() {
-                                            var locations = [
-                                                ['Store Seven',6.873156, 79.861685, 7],
-                                                ['Store Six', 6.893326, 79.882223, 6],
-                                                ['Store One', 6.932329, 79.849354, 4],
-                                                ['Store Two', 6.989240, 79.893257, 5],
-                                                ['Store Three', 6.975175, 79.924212, 3],
-                                                ['Store Four', 6.868001, 79.886113, 2],
-                                                ['Store Five', 6.816022, 79.877326, 1]
-                                            ];
-
-                                            var mapOne = new google.maps.Map(document.getElementById('map2'), {
-                                                zoom: 15,
-                                                center: new google.maps.LatLng(6.989240, 79.893257),
-                                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                                            });
-                                            var infowindow = new google.maps.InfoWindow();
-                                            var marker, i;
-
-                                            for (i = 0; i < locations.length; i++) {
-                                                marker = new google.maps.Marker({
-                                                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                                                    map: mapOne
-                                                });
-
-                                                google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                                                    return function () {
-                                                        infowindow.setContent(locations[i][0]);
-                                                        infowindow.open(mapOne, marker);
-                                                    }
-                                                })(marker, i));
-                                            }
-                                        }
-									</script>
-
+									<div id="map" class="googleMap"></div>
 							</div>
 							<div class="col-md-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
 
@@ -841,10 +805,7 @@
 							</div>
 						</div>
 					</section>
-
-
 				</div> <!-- end of main -->
-
 			</div> <!-- end of container -->
 
 		</div> <!-- end of data-role=page -->
@@ -1733,172 +1694,26 @@
 										Big Bad Wolf Sale
 									</h1>
 								</div>
+								<div class="event-specific-description">
+									<p class="qr-header">For the very first time, the world&#39;s biggest book sale is
+										finally coming to the sunny shores of Sri Lanka! For book lovers, curious
+										readers, parents and everyone else in between, the Big Bad Wolf Sale Colombo
+										will have something for everyone with 1.5 million brand-new, high quality
+										English books covering 20,000 titles across all genres, offered at an
+										unbelievable 60%-80% discount.It&#39;s all happening at SLECC
+										(Sri Lanka Exhibition & Convention Centre from 5th to 15th October 2017
+										24 hours a day, 255 hours non-stop! Doors open at 9am on the 5th, so get
+										yourselves ready and come book hunting with the Wolf!</p>
+								</div>
+								<div id="map1"></div>
 							</div>
 						</div>
 
-						<!--<div class="row">-->
-							<!--<div class="col-md-3">-->
-
-								<!--<img src="assets/images/Captain-America.jpg" class="specific-image"/>-->
-
-								<!--</div> &lt;!&ndash; end of col-md-4 &ndash;&gt;-->
-								<!--<div class="col-md-9">-->
-
-									<!--<div class="profilename">-->
-
-										<!--<h1>ITEM/EVENT NAME</h1>-->
-										<!--<h3 class="heart-icon"><a><i class="fa fa-heart" aria-hidden="true"></i></a></h3>-->
-										<!--<input type="button" class="button" value="ADD TO CART">-->
-
-										<!--</div>-->
-
-										<!--</div> &lt;!&ndash; end of col-md-8 &ndash;&gt;-->
-										<!--</div> &lt;!&ndash; end of row &ndash;&gt;-->
-
-
-										<div class="row">
-											<div class="col-md-12">
-
-												<div class="specific-description">
-													<p class="qr-header">For the very first time, the world&#39;	s biggest book sale is finally coming to the sunny shores of Sri Lanka! For book lovers, curious readers, parents and everyone else in between, the Big Bad Wolf Sale Colombo will have something for everyone with 1.5 million brand-new, high quality English books covering 20,000 titles across all genres, offered at an unbelievable 60%-80% discount.
-
-													It&#39;	s all happening at SLECC (Sri Lanka Exhibition & Convention Centre from 5th to 15th October 2017  24 hours a day, 255 hours non-stop! Doors open at 9am on the 5th, so get yourselves ready and come book hunting with the Wolf!</p>
-												</div>
-											</div> <!-- end of col-md-12 -->
-										</div> <!-- end of row -->
-									</div>
-									<br><br>			<div id="map1" class="googleMap"></div>
-									<script>
-										function initMap() {
-											var uluru = {lat: 6.932329, lng: 79.849354};
-											var map = new google.maps.Map(document.getElementById('map1'), {
-												zoom: 11,
-												center: uluru
-											});
-											var marker = new google.maps.Marker({
-												position: uluru,
-												map: map
-											});
-										}
-									</script>
-
-
-
-
-							</div> <!-- end of main -->
-						</div> <!-- end of container -->
-
-					</div> <!-- end of data-role=page -->
-					<!--End of Event Specific Page============================================================================================-->
-
-					<!-- Event Specific Page 2 ============================================================================================= -->
-					<!-- jquery mobile tag to indicate start of page -->
-					<div data-role="page" id="event-specific2">
-
-						<div class="container-fluid">
-
-							<!-- top navigation bar -->
-							<div class="top-nav-bar">
-								<ul>
-									<li class="top-nav-items left-indent"><a href="#" style="padding: 0px 15px;">BookMart.LK</a></li>
-									<li  class="top-nav-items"><a href="#account-page" data-transition="flip"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-									<li class="top-nav-items"><a href="#pageone" data-transition="flip"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-									<li class="top-nav-items"><a href="#cart-page" data-transition="flip"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-
-							<!-- sidebar -->
-							<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="eventSpecific2Sidebar">
-								<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="home_close()">&times;</button>
-								<div style="margin-top: 20px;">
-									<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
-									<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
-									<a href="#store-specific-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-globe"></i>  STORES</a>
-									<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-money"></i>  DISCOUNTS</a>
-									<a href="#game" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
-								</div>
-
-								<div class="shopping-cart-side-bar">
-									<h2>CART SUMMARY</h2>
-									<div class="item">
-										<div class="left-items">
-											<h3>Name</h3>
-											<h4>Author</h4>
-										</div>
-										<div class="right-items">
-											<h3>$7</h3>
-										</div>
-									</div>
-									<div class="item">
-										<div class="left-items">
-											<h3> Total </h3>
-										</div>
-										<div class="right-items">
-											<h3>$7</h3>
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-							<!-- main content area -->
-							<div class="w3-main" style="margin-left:200px; margin-top: 40px;">
-								<div class="w3-purple">
-									<button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="home_open()">&#9776;</button>
-									<div class="w3-container">
-									</div>
-								</div>
-
-								<div id="map">
-
-
-								</div>
-
-								<!-- slider -->
-								<div class="row">
-									<div class="col-md-12">
-
-										<section class="regular slider">
-											<div>
-												<img src="assets/images/discount.jpg">
-											</div>
-											<div>
-												<img src="assets/images/event.jpg">
-											</div>
-											<div>
-												<img src="assets/images/stores.jpg">
-											</div>
-											<div>
-												<img src="assets/images/games.jpg">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=5">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=6">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=7">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=8">
-											</div>
-											<div>
-												<img src="http://placehold.it/350x300?text=9">
-											</div>
-										</section>
-
-									</div> <!-- end of col-md-12 -->
-								</div> <!-- end of row -->
-
-							</div> <!-- end of main -->
-
-						</div> <!-- end of container -->
-
-					</div> <!-- end of data-role=page -->
-					<!--End of Event Specific Page 2============================================================================================-->
-
-
+					</div>
+				</div> <!-- end of main -->
+			</div> <!-- end of container -->
+	</div> <!-- end of data-role=page -->
+	<!--End of Event Specific Page============================================================================================-->
 					<!--QR Code Scanner Page============================================================================================-->
 					<div data-role="page" id="qrScanner">
 
@@ -2115,7 +1930,114 @@
 		evt.currentTarget.firstElementChild.className += " w3-border-red";
 	}
 </script>
+	<!--Google Maps-->
+	<script>
+        var map, map2;
 
+        function initMap() {
+            var locations = [
+                ['Store Seven',6.873156, 79.861685, 7],
+                ['Store Six', 6.893326, 79.882223, 6],
+                ['Store One', 6.932329, 79.849354, 4],
+                ['Store Two', 6.989240, 79.893257, 5],
+                ['Store Three', 6.975175, 79.924212, 3],
+                ['Store Four', 6.868001, 79.886113, 2],
+                ['Store Five', 6.816022, 79.877326, 1]
+            ];
+            var singleLocation = {lat: 6.932329, lng: 79.849354};
+            var nightOptions={
+                center: {lat: 6.932329, lng: 79.849354},
+                zoom: 12,
+                styles: [
+                    {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                    {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                    {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                    },
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{color: '#263c3f'}]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#6b9a76'}]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{color: '#38414e'}]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#212a37'}]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#9ca5b3'}]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{color: '#746855'}]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#1f2835'}]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#f3d19c'}]
+                    },
+                    {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{color: '#2f3948'}]
+                    },
+                    {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{color: '#17263c'}]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#515c6d'}]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{color: '#17263c'}]
+                    }
+                ]
+            }
+            var map = new google.maps.Map(document.getElementById('map1'),nightOptions);
+            var marker = new google.maps.Marker({
+                position: singleLocation,
+                map: map
+            });
+        }
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap"
+			async defer></script>
 <script type="text/javascript">
 	$('.discountimage').click(function() {
 		$(".discount-port").show();
@@ -2145,9 +2067,7 @@
 		$(".discount-port").hide();
     });
 </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
-    </script>
+
 
 </body>
 </html>

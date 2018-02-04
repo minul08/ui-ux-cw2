@@ -315,9 +315,11 @@ a, a:hover{
   background-size: cover;
   margin: 40px auto;
 }
-.googleMap {
-  height: 400px;
-  width: 100%;
+
+#map1{
+    margin: auto;
+    height: 300px;
+    position: relative;
 }
 .profilename{
   margin: 100px 0px;
@@ -418,7 +420,7 @@ a, a:hover{
 }
 #about-section-2 {
     background: #f9f9f9;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
 }
 /* cart page styles ============================================================== */
@@ -568,7 +570,7 @@ input[type=text], select {
 
 
 #team-section {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 120px;
     background: #fff;
     color: #111;
@@ -756,6 +758,12 @@ input[type=text], select {
     margin: 0px 30px;
     height: 200px;
   }
+.event-specific-description{
+    /*background-color: #b7c2fd;*/
+    margin-bottom: 50px;
+    height: 200px;
+    position:relative;
+}
 
   .specific-description-header{
     padding: 20px;
