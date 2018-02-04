@@ -286,6 +286,10 @@ a, a:hover{
   display: none !important;
 }
 
+.tab-header{
+  width: 50%;
+}
+
 /*account page ==========================================================================*/
 .profilepic{
   background-image: url(../assets/images/profileimage.jpeg);
@@ -821,5 +825,9 @@ input[type=text], select {
 
 .generic-product-mobile{
   text-align: center;
+}
+
+.tab-header{
+  width: 100%;
 }
 }
