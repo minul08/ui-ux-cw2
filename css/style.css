@@ -242,24 +242,24 @@ h1, h2, h3, h4, h5, h6{
 .w3-sidebar {
   height: 100%;
   width: 200px;
-  background-color: #f2b632!important;
+  background-color: #392e25!important;
   position: fixed!important;
   z-index: 1;
   overflow: auto;
 }
-
+ /*f2b632*/
 .w3-sidebar a:hover {
   text-decoration: none !important;
 }
 
 .w3-button:hover {
   color: #000!important;
-  background-color: #b7c2fd!important;
+  background-color: #F7CA18!important;
   text-shadow: none;
 }
 
 .closebutton{
-  background-color: #98a8fc!important;
+  background-color: #392e25!important;
 }
 
 .openbutton{
@@ -293,7 +293,10 @@ a, a:hover{
   background-size: cover;
   margin: 40px auto;
 }
-
+.googleMap {
+  height: 400px;
+  width: 100%;
+}
 .profilename{
   margin: 100px 0px;
 }
@@ -312,6 +315,7 @@ a, a:hover{
 .ui-input-text{
   width: 90%!important;
   margin: 0px auto!important;
+  z-index: -10!important;
 }
 
 .button {
@@ -394,6 +398,29 @@ input[type=text], select {
 
   /* end of generic page styles =================================================== */
 
+.qrcode-text-btn {
+  display:inline-block!important;
+  height:2em;
+  width:3em;
+  background:url(../assets/images/qr.png)90%70% no-repeat;
+  background-size: contain!important;
+  margin-left:2.7em;
+  margin-bottom:1em!important;
+  cursor:pointer!important;
+  vertical-align: bottom;
+}
+.qrcode-text-btn > ui-input-text{
+  opacity: 0!important;
+  position: absolute;
+
+}
+.ui-input-text > input[type=file] {
+  position: absolute;
+  overflow: hidden;
+  width: 1px!important;
+  height: 1px!important;
+  opacity: 0!important;
+}
   /* specific page styles ============================================================= */
 
   .storename{

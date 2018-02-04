@@ -384,25 +384,28 @@
 
 					<div class="qr">
 						<p class="qr-header">Unlock Promo</p>
-						<form action="/action_page.php">
+						<!--<form action="/action_page.php">-->
 							<input type="text" name="promocode" placeholder="ENTER PROMO CODE">
 							<br>
 							<div class="buttons">
-								<input type="button" class="button" value="SCAN QR">
-								<input type="button" class="button" value="SUBMIT">
+								<label for="qrScan" class=qrcode-text-btn>
+									<input type=file
+										   accept="image/*"
+										   capture=environment
+										   id="qrScan"
+										   tabindex=-3>
+								</label>
+								<input type="button" class="button" style="display: inline;" value="SUBMIT">
 							</div>
-						</form>
+						<!--</form>-->
 					</div>
-
-
-
 				</div> <!-- end of col-md-12 -->
 			</div> <!-- end of row -->
 
 
+
 			<div class="row">
 				<div class="col-md-12">
-
 					<div class="ach-header">
 						ACHIEVEMENTS
 					</div>
@@ -588,11 +591,11 @@
 								</div> <!-- end of discounts -->
 								<!--events tab -->
 								<div id="events" class="tab-pane fade">
-									<div class="row" style="margin: 0 auto; display: table;">
+									<div class="row" style="margin: 0 auto;">
 										<div class="display-item">
-											<img src="assets/images/Captain-America.jpg" class="img-rounded">
+											<img src="assets/images/bookfair.jpeg" class="img-rounded">
 											<div class="display-item-text" style="width: 70%">
-												<a href="#"><h2>Event Name</h2></a>
+												<a href="#event-specific2"><h2>Colombo International Book Fair</h2></a>
 												<a href="#"><h3>Location</h3></a>
 											</div>
 											<div class="display-item-text" style="width: 20%">
@@ -601,11 +604,11 @@
 											</div>
 										</div>
 									</div>
-									<div class="row" style="margin: 0 auto; display: table;">
+									<div class="row" style="margin: 0 auto; width:100%;">
 										<div class="display-item">
-											<img src="assets/images/Captain-America.jpg" class="img-rounded">
+											<img src="assets/images/BigBadWolf.png" class="img-rounded">
 											<div class="display-item-text" style="width: 70%">
-												<a href="#"><h2>Event Name</h2></a>
+												<a href="#event-specific"><h2>Big Bad Wolf Sale</h2></a>
 												<a href="#"><h3>Location</h3></a>
 											</div>
 											<div class="display-item-text" style="width: 20%">
@@ -614,6 +617,7 @@
 											</div>
 										</div>
 									</div>
+
 								</div> <!-- end of events -->
 							</div> <!-- end of tab content -->
 						</div>
@@ -898,24 +902,256 @@
 
 <!-- End of Cart Page ============================================================================================= -->
 
-<!--QR Code Scanner Page============================================================================================-->
-<div data-role="page" id="game">
+<!-- Event Specific Page ============================================================================================= -->
+<!-- jquery mobile tag to indicate start of page -->
+<div data-role="page" id="event-specific">
 
 	<div class="container-fluid">
 
 		<!-- top navigation bar -->
 		<div class="top-nav-bar">
 			<ul>
-				<li class="top-nav-items left-indent"><a href="#home" style="padding: 0px 15px;">BookMart.LK</a></li>
-				<li  class="top-nav-items"><a href="#news"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-				<li class="top-nav-items"><a href="#contact"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-				<li class="top-nav-items"><a href="#about"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+				<li class="top-nav-items left-indent"><a href="#" style="padding: 0px 15px;">BookMart.LK</a></li>
+				<li  class="top-nav-items"><a href="#account-page" data-transition="flip"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+				<li class="top-nav-items"><a href="#pageone" data-transition="flip"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+				<li class="top-nav-items"><a href="#cart-page" data-transition="flip"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 
 		<!-- sidebar -->
-		<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="mySidebar">
-			<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="w3_close()">&times;</button>
+		<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="eventSpecificSidebar">
+			<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="home_close()">&times;</button>
+			<div style="margin-top: 20px;">
+				<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
+				<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+				<a href="#store-specific-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-globe"></i>  STORES</a>
+				<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-money"></i>  DISCOUNTS</a>
+				<a href="#game" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
+			</div>
+
+			<div class="shopping-cart-side-bar">
+				<h2>CART SUMMARY</h2>
+				<div class="item">
+					<div class="left-items">
+						<h3>Name</h3>
+						<h4>Author</h4>
+					</div>
+					<div class="right-items">
+						<h3>$7</h3>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left-items">
+						<h3> Total </h3>
+					</div>
+					<div class="right-items">
+						<h3>$7</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- main content area -->
+		<div class="w3-main" style="margin-left:200px; margin-top: 40px;">
+			<div class="w3-purple">
+				<button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="home_open()">&#9776;</button>
+				<div class="w3-container">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="storename">
+						<h1>
+							Big Bad Wolf Sale
+						</h1>
+					</div>
+				</div>
+			</div>
+
+			<!--<div class="row">-->
+				<!--<div class="col-md-3">-->
+
+					<!--<img src="assets/images/Captain-America.jpg" class="specific-image"/>-->
+
+				<!--</div> &lt;!&ndash; end of col-md-4 &ndash;&gt;-->
+				<!--<div class="col-md-9">-->
+
+					<!--<div class="profilename">-->
+
+						<!--<h1>ITEM/EVENT NAME</h1>-->
+						<!--<h3 class="heart-icon"><a><i class="fa fa-heart" aria-hidden="true"></i></a></h3>-->
+						<!--<input type="button" class="button" value="ADD TO CART">-->
+
+					<!--</div>-->
+
+				<!--</div> &lt;!&ndash; end of col-md-8 &ndash;&gt;-->
+			<!--</div> &lt;!&ndash; end of row &ndash;&gt;-->
+
+
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="specific-description">
+						<p class="qr-header">For the very first time, the world&#39;	s biggest book sale is finally coming to the sunny shores of Sri Lanka! For book lovers, curious readers, parents and everyone else in between, the Big Bad Wolf Sale Colombo will have something for everyone with 1.5 million brand-new, high quality English books covering 20,000 titles across all genres, offered at an unbelievable 60%-80% discount.
+
+							It&#39;	s all happening at SLECC (Sri Lanka Exhibition & Convention Centre from 5th to 15th October 2017  24 hours a day, 255 hours non-stop! Doors open at 9am on the 5th, so get yourselves ready and come book hunting with the Wolf!</p>
+					</div>
+				</div> <!-- end of col-md-12 -->
+			</div> <!-- end of row -->
+		</div>
+<br><br>			<div id="map1" class="googleMap"></div>
+			<script>
+                function initMap() {
+                    var uluru = {lat: 6.932329, lng: 79.849354};
+                    var map = new google.maps.Map(document.getElementById('map1'), {
+                        zoom: 11,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+			</script>
+
+			<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap">
+			</script>
+
+
+		</div> <!-- end of main -->
+	</div> <!-- end of container -->
+
+</div> <!-- end of data-role=page -->
+<!--End of Event Specific Page============================================================================================-->
+
+<!-- Event Specific Page 2 ============================================================================================= -->
+<!-- jquery mobile tag to indicate start of page -->
+<div data-role="page" id="event-specific2">
+
+	<div class="container-fluid">
+
+		<!-- top navigation bar -->
+		<div class="top-nav-bar">
+			<ul>
+				<li class="top-nav-items left-indent"><a href="#" style="padding: 0px 15px;">BookMart.LK</a></li>
+				<li  class="top-nav-items"><a href="#account-page" data-transition="flip"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+				<li class="top-nav-items"><a href="#pageone" data-transition="flip"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+				<li class="top-nav-items"><a href="#cart-page" data-transition="flip"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- sidebar -->
+		<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="eventSpecific2Sidebar">
+			<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="home_close()">&times;</button>
+			<div style="margin-top: 20px;">
+				<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
+				<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+				<a href="#store-specific-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-globe"></i>  STORES</a>
+				<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-money"></i>  DISCOUNTS</a>
+				<a href="#game" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
+			</div>
+
+			<div class="shopping-cart-side-bar">
+				<h2>CART SUMMARY</h2>
+				<div class="item">
+					<div class="left-items">
+						<h3>Name</h3>
+						<h4>Author</h4>
+					</div>
+					<div class="right-items">
+						<h3>$7</h3>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left-items">
+						<h3> Total </h3>
+					</div>
+					<div class="right-items">
+						<h3>$7</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- main content area -->
+		<div class="w3-main" style="margin-left:200px; margin-top: 40px;">
+			<div class="w3-purple">
+				<button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="home_open()">&#9776;</button>
+				<div class="w3-container">
+				</div>
+			</div>
+
+			<div id="map">
+
+
+			</div>
+
+			<!-- slider -->
+			<div class="row">
+				<div class="col-md-12">
+
+					<section class="regular slider">
+						<div>
+							<img src="assets/images/discount.jpg">
+						</div>
+						<div>
+							<img src="assets/images/event.jpg">
+						</div>
+						<div>
+							<img src="assets/images/stores.jpg">
+						</div>
+						<div>
+							<img src="assets/images/games.jpg">
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=5">
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=6">
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=7">
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=8">
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=9">
+						</div>
+					</section>
+
+				</div> <!-- end of col-md-12 -->
+			</div> <!-- end of row -->
+
+		</div> <!-- end of main -->
+
+	</div> <!-- end of container -->
+
+</div> <!-- end of data-role=page -->
+<!--End of Event Specific Page 2============================================================================================-->
+
+
+<!--QR Code Scanner Page============================================================================================-->
+<div data-role="page" id="qrScanner">
+
+	<div class="container-fluid">
+
+		<!-- top navigation bar -->
+		<div class="top-nav-bar">
+			<ul>
+				<li class="top-nav-items left-indent"><a href="#" style="padding: 0px 15px;">BookMart.LK</a></li>
+				<li  class="top-nav-items"><a href="#account-page" data-transition="flip"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+				<li class="top-nav-items"><a href="#pageone" data-transition="flip"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+				<li class="top-nav-items"><a href="#cart-page" data-transition="flip"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- sidebar -->
+		<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="qrSidebar">
+			<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="qrcode_close()">&times;</button>
 			<div style="margin-top: 20px;">
 				<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 				<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
@@ -951,57 +1187,22 @@
 		<div class="w3-main" style="margin-left:200px; margin-top: 40px;">
 			<!-- mobile menu button -->
 			<div class="w3-purple">
-				<button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="w3_open()">&#9776;</button>
+				<button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="qrcode_open()">&#9776;</button>
 				<div class="w3-container">
 				</div>
 			</div>
 			<!-- end of mobile menu button -->
+			<!--<video id="preview"></video>-->
 
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<div class="navbar-form navbar-left">
-						<h4>QR Code Scanner</h4>
-					</div>
-					<div class="navbar-form navbar-right">
-						<select class="form-control" id="camera-select"></select>
-						<div class="form-group">
-							<input id="image-url" type="text" class="form-control" placeholder="Image url">
-							<button title="Decode Image" class="btn btn-default btn-sm" id="decode-img" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-upload"></span></button>
-							<button title="Image shoot" class="btn btn-info btn-sm disabled" id="grab-img" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-picture"></span></button>
-							<button title="Play" class="btn btn-success btn-sm" id="play" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-play"></span></button>
-							<button title="Pause" class="btn btn-warning btn-sm" id="pause" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-pause"></span></button>
-							<button title="Stop streams" class="btn btn-danger btn-sm" id="stop" type="button" data-toggle="tooltip"><span class="glyphicon glyphicon-stop"></span></button>
-						</div>
-					</div>
-				</div>
-				<div class="panel-body text-center">
-					<div class="col-md-6">
-						<div class="well" style="position: relative;display: inline-block;">
-							<canvas width="320" height="240" id="webcodecam-canvas"></canvas>
-							<div class="scanner-laser laser-rightBottom" style="opacity: 0.5;"></div>
-							<div class="scanner-laser laser-rightTop" style="opacity: 0.5;"></div>
-							<div class="scanner-laser laser-leftBottom" style="opacity: 0.5;"></div>
-							<div class="scanner-laser laser-leftTop" style="opacity: 0.5;"></div>
-						</div>
+			<!--<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">-->
+			<input type="file" accept="video/*;capture=camcorder">
 
-					</div>
-					<div class="col-md-6">
-						<div class="thumbnail" id="result">
-							<div class="well" style="overflow: hidden;">
-								<img width="320" height="240" id="scanned-img" src="">
-							</div>
-							<div class="caption">
-								<h3>Scanned result</h3>
-								<p id="scanned-QR"></p>
-							</div>
-						</div>
-					</div>
-				</div>
 
 		</div> <!-- end of container -->
 
 	</div> <!-- end of data-role=page -->
 	<!--End of QR Code Scanner Page============================================================================================-->
+</div>
 </div>
 	<!-- multi item slider scripts -->
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -1053,6 +1254,13 @@
     function account_close() {
         document.getElementById("accountSidebar").style.display = "none";
     }
+    //QRCode Sidebar
+    function qrcode_open() {
+        document.getElementById("qrSidebar").style.display = "block";
+    }
+    function qrcode_close() {
+        document.getElementById("qrSidebar").style.display = "none";
+    }
     // Store Generic Sidebar
     function storegeneric_open() {
         document.getElementById("storeGenericSidebar").style.display = "block";
@@ -1078,19 +1286,30 @@
 
 
 <!--QR Scanner Scripts-->
-
 <script type="text/javascript" src="js/filereader.js"></script>
-<!-- Using jquery version: -->
-<!--
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/qrcodelib.js"></script>
-    <script type="text/javascript" src="js/webcodecamjquery.js"></script>
-    <script type="text/javascript" src="js/mainjquery.js"></script>
--->
-<script type="text/javascript" src="js/qrcodelib.js"></script>
-<script type="text/javascript" src="js/webcodecamjs.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/instascan.min.js"></script>
+<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
+</script>
 
+
+<script>
+    function openQRCamera(node) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            node.value = "";
+            qrcode.callback = function(res) {
+                if(res instanceof Error) {
+                    alert("No QR code found. Please make sure the QR code is within the camera's frame and try again.");
+                } else {
+                    node.parentNode.previousElementSibling.value = res;
+                }
+            };
+            qrcode.decode(reader.result);
+        };
+        reader.readAsDataURL(node.files[0]);
+    }
+
+</script>
 
 </body>
 </html>
