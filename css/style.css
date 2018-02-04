@@ -44,7 +44,8 @@
 
 
 *:not(i)  {
-  font-family: 'PT Sans', sans-serif !important;
+  /*font-family: 'PT Sans', sans-serif !important;*/
+  font-family: 'Encode Sans Expanded', sans-serif !important;
   font-weight: 400 !important;
 }
 h1, h2, h3, h4, h5, h6{
@@ -418,8 +419,42 @@ font-size: 20px;
 /* end of cart page styles =============================================================== */
 
 /* generic page styles ============================================================= */
+
+
+
 .searchdiv{
   margin: 40px 0px;
+}
+
+.store-heading{
+  margin: -19px;
+    padding: 20px 60px;
+}
+
+.storeheadingparts-1{
+  display: inline-block;
+    background: #aa863a;
+    margin-bottom: 0px;
+        padding: 6px;
+        color: #fff;
+}
+
+.storeheadingparts-2{
+  display: inline-block;
+    background: #aa863a;
+    margin-top: 3px;
+        padding: 6px;
+        color: #fff;
+}
+
+.storeimage{
+  background-image: url("../assets/images/cart/bookstore-pic.jpg");
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    width: 100%;
+    height: 350px;
+    max-width: 1920px;
 }
 
 input[type=text], select {
@@ -551,5 +586,10 @@ input[type=text], select {
   padding: 10px;
   margin: 10px 0px;
   width: 100%;
+}
+
+.store-heading {
+    margin: 0px;
+    padding: 0px 20px;
 }
 }
