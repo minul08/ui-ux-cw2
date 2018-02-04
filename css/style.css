@@ -1,3 +1,7 @@
+body{
+  text-shadow: none;
+}
+
 .carousel-control.left, .carousel-control.right {
   margin-right: 0px;
   margin-left: 0px;
@@ -48,6 +52,7 @@
   /*font-family: 'PT Sans', sans-serif !important;*/
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 400 !important;
+  text-shadow: none;
 }
 h1, h2, h3, h4, h5, h6{
   text-shadow: none !important;
@@ -413,6 +418,31 @@ a, a:hover{
     padding-bottom: 80px;
 }
 /* cart page styles ============================================================== */
+
+.cart-paypal{
+  text-align: right;
+}
+
+.paypal{
+  background: #98a8fc;
+  border: #98a8fc solid 1px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.paypal:hover{
+  background: white;
+  color: #98a8fc;
+  border: #98a8fc solid 1px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 50px;
+    
+}
+
 .display-item-text-one{
   width: 70%;
 }
@@ -718,13 +748,46 @@ input[type=text], select {
   }
 
   .specific-description{
-    background-color: #b7c2fd;
+    /*background-color: #b7c2fd;*/
     margin: 0px 30px;
     height: 200px;
   }
 
+  .specific-description-header{
+    padding: 20px;
+  font-size: 20px;
+  font-weight: 700!important;
+  border-bottom: #98a8fc solid 1px;
+  }
+
+  .button-specific-add-cart{
+    background-color: #98a8fc;
+    border: #98a8fc solid 1px;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 16px;
+    cursor: pointer;
+  }
+
+  .button-specific-add-cart:hover{
+    background-color: #fff;
+    border: #98a8fc solid 1px;
+    color: #98a8fc;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 16px;
+    cursor: pointer;
+  }
+
   .specific-price{
-    background-color: #a4b2ff;
+    /*background-color: #a4b2ff;*/
     margin: 40px 30px;
     padding: 20px;
     font-size: 20px;
@@ -733,6 +796,7 @@ input[type=text], select {
 
   .specific-price .leftelement{
     display: inline-block;
+        border-bottom: #98a8fc solid;
   }
 
   .specific-price .rightelement{
@@ -747,7 +811,7 @@ input[type=text], select {
  }
 
  .bestseller{
-  background: #98a8fc;
+  /*background: #98a8fc;*/
   padding: 10px 60px 15px;
   margin: 10px 30px;
 }
