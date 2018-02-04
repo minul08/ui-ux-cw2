@@ -44,7 +44,7 @@
 
 
 *:not(i)  {
-  font-family: 'PT Sans', sans-serif !important;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400 !important;
 }
 h1, h2, h3, h4, h5, h6{

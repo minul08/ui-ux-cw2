@@ -396,7 +396,7 @@
 										   accept="image/*"
 										   capture=environment
 										   id="qrScan"
-										   onclick="return showQRIntro();"
+										   onclick="showQRIntro();"
 										   tabindex=-3>
 								</label>
 								<input type="button" class="button" style="display: inline;" value="SUBMIT">
@@ -1007,13 +1007,13 @@
 <br><br>			<div id="map1" class="googleMap"></div>
 			<script>
                 function initMap() {
-                    var uluru = {lat: 6.932329, lng: 79.849354};
+                    var slecc = {lat: 6.932329, lng: 79.849354};
                     var map = new google.maps.Map(document.getElementById('map1'), {
-                        zoom: 11,
-                        center: uluru
+                        zoom: 15,
+                        center: slecc
                     });
                     var marker = new google.maps.Marker({
-                        position: uluru,
+                        position: slecc,
                         map: map
                     });
                 }
@@ -1290,9 +1290,8 @@
 
 
 <!--QR Scanner Scripts-->
-<script type="text/javascript" src="js/filereader.js"></script>
-<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
-</script>
+<!--<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">-->
+<!--</script>-->
 
 <script>
     function openQRCamera(node) {
@@ -1312,14 +1311,16 @@
     }
 
     function showQRIntro() {
-//         return confirm("Allow your camera to take a picture of a QR code.");
-         bootbox.confirm("Allow your camera to take a picture of a QR code?",
-			 function(result) {
-                 if (result == "true") {
-                     return
-                 }
-             }
-             )
+         return confirm("Allow your camera to take a picture of a QR code.");
+//         bootbox.confirm("Allow your camera to take a picture of a QR code?",
+//			 function(result) {
+//                 if (result) {
+//                     return true;
+//                 }else{
+//                     return false;
+//				 }
+//             }
+//             )
 
     }
 </script>
