@@ -64,7 +64,7 @@
 				<button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="home_close()">&times;</button>
 				<div style="margin-top: 20px;">
 					<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
-					<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+					<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
 					<a href="#store-specific-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-globe"></i>  STORES</a>
 					<a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-money"></i>  DISCOUNTS</a>
 					<a href="#game" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
@@ -352,8 +352,161 @@
 	</div> <!-- end of data-role=page -->
 
 	<!-- End of Home Page ============================================================================================== -->
+    <!-- Start of Home Page ======================================================================================== -->
 
-	<!-- Start of Account Page ============================================================================================ -->
+    <!-- jquery mobile tag to indicate start of page -->
+    <div data-role="page" id="about-us">
+
+        <div class="container-fluid">
+
+            <!-- top navigation bar -->
+            <div class="top-nav-bar">
+                <ul>
+                    <li class="top-nav-items left-indent"><a href="#" style="padding: 0px 15px;">BookMart.LK</a></li>
+                    <li  class="top-nav-items"><a href="#account-page" data-transition="flip"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li class="top-nav-items"><a href="#pageone" data-transition="flip"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                    <li class="top-nav-items"><a href="#cart-page" data-transition="flip"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- sidebar -->
+            <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 40px;" id="aboutSidebar">
+                <button class="w3-bar-item w3-button w3-large w3-hide-large closebutton" onclick="about_close()">&times;</button>
+                <div style="margin-top: 20px;">
+                    <a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
+                    <a href="#about" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
+                    <a href="#store-specific-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-globe"></i>  STORES</a>
+                    <a href="#store-generic-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-money"></i>  DISCOUNTS</a>
+                    <a href="#game" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
+                </div>
+
+                <div class="shopping-cart-side-bar">
+                    <h2>CART SUMMARY</h2>
+                    <div class="item">
+                        <div class="left-items">
+                            <h3>Name</h3>
+                            <h4>Author</h4>
+                        </div>
+                        <div class="right-items">
+                            <h3>$7</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left-items">
+                            <h3> Total </h3>
+                        </div>
+                        <div class="right-items">
+                            <h3>$7</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- main content area -->
+            <div class="w3-main" style="margin-left:200px; margin-top: 40px;">
+                <div class="w3-purple">
+                    <button class="w3-button w3-purple w3-xlarge w3-hide-large openbutton" onclick="about_open()">&#9776;</button>
+                    <div class="w3-container">
+                    </div>
+                </div>
+
+                <!-- Start Header Section -->
+                <div class="page-top">
+                    <div class="overlay">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>About Us</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start Team Member Section -->
+                <section id="team-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
+                                    <h2>Our Team</h2>
+                                    <p>ipso facto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="300ms">
+                                <div class="team-member">
+                                    <img src="assets/images/team/team-1.jpg" class="img-responsive" alt="">
+                                    <div class="team-details">
+                                        <h4>Shalukhya Senalankadhikara</h4>
+                                        <p>Code Monkey</p>
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/shalukhya"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="600ms">
+                                <div class="team-member">
+                                    <img src="assets/images/team/team-2.jpg" class="img-responsive" alt="">
+                                    <div class="team-details">
+                                        <h4>Shayan Raju</h4>
+                                        <p>Code Monkey</p>
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/UpperEastShayde"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="900ms">
+                                <div class="team-member">
+                                    <img src="assets/images/team/team-3.jpg" class="img-responsive" alt="">
+                                    <div class="team-details">
+                                        <h4>Minul Wimalagunaratne</h4>
+                                        <p>Code Monkey</p>
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/minul.wimalagunaratne"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1200ms">
+                                <div class="team-member">
+                                    <img src="assets/images/team/team-4.jpg" class="img-responsive" alt="">
+                                    <div class="team-details">
+                                        <h4>Imaadh Rizni</h4>
+                                        <p>Code Monkey</p>
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/imaadhrizni"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-3 -->
+                        </div>
+                    </div>
+                </section>
+
+
+            </div> <!-- end of main -->
+
+        </div> <!-- end of container -->
+
+    </div> <!-- end of data-role=page -->
+
+    <!-- End of About Us Page ============================================================================================== -->
+
+
+    <!-- Start of Account Page ============================================================================================ -->
 
 	<div data-role="page" id="account-page">
 

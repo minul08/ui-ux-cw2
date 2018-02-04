@@ -46,7 +46,7 @@
 *:not(i)  {
   /*font-family: 'PT Sans', sans-serif;*/
   /*font-family: 'PT Sans', sans-serif !important;*/
-  font-family: 'Encode Sans Expanded', sans-serif !important;
+  font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 400 !important;
 }
 h1, h2, h3, h4, h5, h6{
@@ -471,6 +471,141 @@ input[type=text], select {
 
   /* end of generic page styles =================================================== */
 
+/* ----------------------------------*/
+/* Start Team Member Section         */
+/* ----------------------------------*/
+
+
+#team-section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background: #fff;
+    color: #111;
+    overflow: hidden;
+}
+
+#team-section .section-title h2 {
+//color: #fff;
+}
+
+#team-section .section-title p {
+//color: #fff;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .team-details {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(114, 159, 152, 1);
+/*(114, 159, 152, 1)*/
+/*(255, 67, 46, 0.8)*/
+    color: #fff;
+    padding: 0 2px;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.team-member .team-details h4 {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.team-member .team-details p {
+    padding-bottom: 20%;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.team-member .team-details li {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.team-member .team-details li a {
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid transparent;
+    color: #111;
+    font-size: 16px;
+}
+
+.team-member .team-details li:hover a {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+.team-details h4,
+.team-details p,
+.team-details li{
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
+}
+
+.team-member:hover .team-details h4,
+.team-member:hover .team-details p,
+.team-member:hover .team-details li {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.team-member:hover .team-details {
+    opacity: 0.7;
+    filter: Alpha(Opacity=100);
+}
+
+.team-member:hover .team-details h4 {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.team-member:hover .team-details p {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.team-member:hover .team-details li:nth-child(n+1) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.team-member:hover .team-details li:nth-child(n+2) {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.team-member:hover .team-details li:nth-child(n+3) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.team-member:hover .team-details li:nth-child(n+4) {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.team-member:hover .team-details li:nth-child(n+5) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+
 .qrcode-text-btn {
   display:inline-block!important;
   height:2em;
@@ -494,6 +629,21 @@ input[type=text], select {
   width: 1px!important;
   height: 1px!important;
   opacity: 0!important;
+}
+
+.page-top {
+    margin: 0px 0 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.page-top {
+    background: url(../assets/images/aboutUsBanner.jpg) no-repeat;
+    padding: 75px 0;
+    margin-top: -2px;
+}
+
+.page-header h1 {
+    color: #fff;
 }
   /* specific page styles ============================================================= */
 
