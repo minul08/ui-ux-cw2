@@ -59,7 +59,7 @@
 				<div style="margin-top: 20px;">
 					<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 					<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
-					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button eventsmenu eventsmenu"><i class="fa fa fa-calendar"></i>  EVENTS</a>
 					<a href="#account-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
 				</div>
 
@@ -556,7 +556,7 @@
 				<div style="margin-top: 20px;">
 					<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 					<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
-					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button eventsmenu"><i class="fa fa fa-calendar"></i>  EVENTS</a>
 					<a href="#account-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
 				</div>
 
@@ -838,7 +838,7 @@
 						<div style="margin-top: 20px;">
 							<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 							<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
-							<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+							<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button eventsmenu"><i class="fa fa fa-calendar"></i>  EVENTS</a>
 							<a href="#account-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
 						</div>
 
@@ -989,7 +989,7 @@
 							<div style="margin-top: 20px;">
 								<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 								<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
-								<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+								<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button eventsmenu"><i class="fa fa fa-calendar"></i>  EVENTS</a>
 								<a href="#account-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
 							</div>
 
@@ -1353,7 +1353,7 @@
 				<div style="margin-top: 20px;">
 					<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 					<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
-					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button eventsmenu"><i class="fa fa fa-calendar"></i>  EVENTS</a>
 					<a href="#account-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
 				</div>
 
@@ -1527,7 +1527,7 @@
 				<div style="margin-top: 20px;">
 					<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 					<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
-					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+					<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button eventsmenu"><i class="fa fa fa-calendar"></i>  EVENTS</a>
 					<a href="#account-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
 				</div>
 
@@ -1609,7 +1609,7 @@
 							<div style="margin-top: 20px;">
 								<a href="#pageone" class="w3-bar-item w3-button"><i class="fa fa fa-home"></i>  HOME</a>
 								<a href="#about-us" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-users"></i>  ABOUT US</a>
-								<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-calendar"></i>  EVENTS</a>
+								<a href="#pageone" data-transition="flip" class="w3-bar-item w3-button eventsmenu"><i class="fa fa fa-calendar"></i>  EVENTS</a>
 								<a href="#account-page" data-transition="flip" class="w3-bar-item w3-button"><i class="fa fa fa-gamepad"></i>  GAMES</a>
 							</div>
 
@@ -2009,12 +2009,23 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg7uYLlDZ7nDjswRllLT1cpb8vwBbOJ0s&callback=initMap"
 async defer></script>
 <script type="text/javascript">
+
+
 	$('.w3-bar-item').click(function() {
 		if($(window).width() < 999){
 			$('.w3-sidebar').attr('style','display: none');		
 		}
 
 	});
+
+	$('.eventsmenu').click(function() {
+		$(".event-port").show();
+		$(".discount-port").hide();
+		$(".store-port").hide();
+		$(".game-port").hide();
+	});
+
+	
 
 	$('.discountimage').click(function() {
 		$(".discount-port").show();
