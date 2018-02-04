@@ -290,6 +290,10 @@ a, a:hover{
   width: 50%;
 }
 
+.discountimage, .eventimage, .storesimage, .gameimage{
+  cursor: pointer;
+}
+
 /*account page ==========================================================================*/
 .profilepic{
   background-image: url(../assets/images/profileimage.jpeg);
