@@ -443,7 +443,7 @@
 
 					<div id="favorite-tab" class="w3-container cityone" style="display:block">
 
-						<div class="tab-part discount-port">
+						<div class="tab-part">
 
 							<div class="col-md-2 generic-product-mobile">
 								<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
@@ -475,7 +475,7 @@
 
 						</div>
 
-						<div class="tab-part discount-port">
+						<div class="tab-part">
 
 							<div class="col-md-2 generic-product-mobile">
 								<img src="assets/images/Captain-America.jpg" class="generic-product-image"/>
@@ -1997,6 +1997,8 @@
 
 					$(document).on('ready', function() {
 						$(".ui-loader").hide();
+						
+						
 					});
 					
 					
@@ -2106,33 +2108,40 @@
 </script>
 
 <script type="text/javascript">
+	$('.w3-bar-item').click(function() {
+		if($(window).width() < 999){
+			$('.w3-sidebar').attr('style','display: none');		
+		}
+
+	});
+
 	$('.discountimage').click(function() {
 		$(".discount-port").show();
 		$(".event-port").hide();
 		$(".store-port").hide();
 		$(".game-port").hide();
-    });
+	});
 
-    $('.eventimage').click(function() {
+	$('.eventimage').click(function() {
 		$(".event-port").show();
 		$(".discount-port").hide();
 		$(".store-port").hide();
 		$(".game-port").hide();
-    });
+	});
 
-    $('.storesimage').click(function() {
+	$('.storesimage').click(function() {
 		$(".store-port").show();
 		$(".event-port").hide();
 		$(".discount-port").hide();
 		$(".game-port").hide();
-    });
+	});
 
-    $('.gameimage').click(function() {
+	$('.gameimage').click(function() {
 		$(".game-port").show();
 		$(".event-port").hide();
 		$(".store-port").hide();
 		$(".discount-port").hide();
-    });
+	});
 </script>
 
 
