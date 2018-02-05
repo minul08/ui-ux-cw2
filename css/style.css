@@ -331,7 +331,52 @@ a, a:hover{
   background-size: cover;
   margin: 40px auto;
 }
+/* Start Copyright Section */
 
+.footer-section {
+    border-top: 1px solid #363636;
+    font-size: 12px;
+    padding-top: 2px;
+    background: #252839;
+    color: white;
+}
+
+.footer {
+    font-size: 16px;
+}
+
+.footer-menu li {
+    display: inline;
+    padding-left: 10px;
+}
+.fa-facebook-square:hover{
+    color:#f7ca18!important;
+}
+.fa-facebook-square{
+    color:white;
+}
+.fa-linkedin{
+    color:white;
+}
+.fa-linkedin:hover{
+    color:#f7ca18!important;
+}
+.fa-twitter-square{
+    color:white;
+}
+.fa-twitter-square:hover{
+    color:#f7ca18!important;
+}
+.footer-menu li a {
+    color: #7f7f7f;
+    font-weight: 500;
+}
+
+.footer-menu li a.active {
+    color: #fff;
+    font-size: 13px;
+}
+/* End footer Section */
 #map1{
     margin: auto;
     height: 300px;
