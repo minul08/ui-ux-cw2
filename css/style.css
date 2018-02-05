@@ -407,6 +407,12 @@ a, a:hover{
   font-weight: 700!important;
     color: white;
 }
+.event-content{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700!important;
+    color: black;
+}
 
 .ui-input-text{
   width: 90%!important;
